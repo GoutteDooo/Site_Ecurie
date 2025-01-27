@@ -13,9 +13,9 @@ const Navbar = () => {
       <div className="navbar">
         <img src="/assets/images/logo.jpg" alt="logo" />
         <div className="menu-burger" onClick={handleClick}>
-          <div className={`line ${active ? "active" : ""}`}></div>
-          <div className={`line ${active ? "active" : ""}`}></div>
-          <div className={`line ${active ? "active" : ""}`}></div>
+          <div className={`line ${active ? "active" : "inactive"}`}></div>
+          <div className={`line ${active ? "active" : "inactive"}`}></div>
+          <div className={`line ${active ? "active" : "inactive"}`}></div>
         </div>
       </div>
       <Outlet />
