@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -8,14 +9,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      <img src="/assets/logo.jpg" alt="logo" />
-      <div className="menu-burger" onClick={handleClick}>
-        <div className={`line ${active ? "active" : ""}`}></div>
-        <div className={`line ${active ? "active" : ""}`}></div>
-        <div className={`line ${active ? "active" : ""}`}></div>
+    <>
+      <div className="navbar">
+        <img src="/assets/images/logo.jpg" alt="logo" />
+        <div className="menu-burger" onClick={handleClick}>
+          <div className={`line ${active ? "active" : ""}`}></div>
+          <div className={`line ${active ? "active" : ""}`}></div>
+          <div className={`line ${active ? "active" : ""}`}></div>
+        </div>
       </div>
-    </div>
+      <Outlet />
+    </>
   );
 };
 
