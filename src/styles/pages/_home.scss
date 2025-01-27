@@ -2,6 +2,11 @@
   height: 300vh;
   &__presentation {
     height: 100vh;
-    background-color: red;
+    &__video {
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6) grayscale(10%);
+    }
   }
 }
