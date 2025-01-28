@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "12 Boxes Extérieurs",
+      "description": [
+        "Vue panoramique sur la carrière",
+        "Fenêtres Verre Security ouvrables",
+        "12 m²"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "13 Boxes Intérieurs",
+      "description": [
+        "Grand espace d'ouverture pour la tête",
+        "Dans hangar sécurisé",
+        "12 m²"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Les Autres Installations",
+      "description": [
+        "Carrière de 30m x 55m",
+        "Manège couvert de 25m x 15m",
+        "3 paddocks de 75m x 25m et 3 de 50m x 25m"
+      ]
+    }
+  ]
+}
