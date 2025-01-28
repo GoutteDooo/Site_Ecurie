@@ -1,6 +1,13 @@
 import React from "react";
 
 const Home = () => {
+  const scrollEvent = () => {
+    const viewportHeight = window.innerHeight;
+    window.scrollBy({
+      top: viewportHeight,
+    });
+  };
+
   return (
     <div className="home">
       <div className="home__presentation">
@@ -18,7 +25,10 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
         <div className="home__presentation__content">
-          <div className="home__presentation__content--logo"></div>
+          <div
+            className="home__presentation__content--logo"
+            onClick={scrollEvent}
+          ></div>
           <div className="home__presentation__content--titles">
             <h1>
               Bienvenue aux <br></br>Ecuries de la Selle
@@ -26,7 +36,7 @@ const Home = () => {
             <h2>Ecuries familiales à Saulzoir</h2>
           </div>{" "}
           <div className="home__presentation__content--button">
-            <button>DECOUVRIR</button>
+            <button onClick={scrollEvent}>DECOUVRIR</button>
           </div>
         </div>
       </div>
