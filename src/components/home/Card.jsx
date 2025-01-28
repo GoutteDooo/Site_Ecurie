@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 /**
  * Affiche les différentes Installations de l'Ecurie
@@ -10,36 +11,43 @@ import React from "react";
  * @returns
  */
 const Card = ({ card }) => {
-  console.log(card);
-
+  const [slideX, setSlideX] = useState(0);
+  const handleSlide = (direction) => {
+    const newX = slideX + direction;
+    const indexes = card.carousel;
+    if (newX > 0) {
+      setSlideX(-(indexes - 1) * 100);
+    } else if (newX < -(indexes - 1) * 100) {
+      setSlideX(0);
+    } else {
+      setSlideX((prevState) => prevState + direction);
+    }
+  };
   return (
     <div className="main__card">
       <div className="main__card__carousel--viewport">
-        <div className="main__card__carousel--carousel">
-          {card.carousel.map((item, index) => (
-            <div className="main__card__carousel--item" key={index}>
-              <img
-                src={`/assets/images/accueil/carousel/${item}.jpg`}
-                alt="carousel"
-              />
-            </div>
+        <div className="carousel--arrow" onClick={() => handleSlide(100)}></div>
+        <div
+          className="carousel--arrow"
+          onClick={() => handleSlide(-100)}
+        ></div>
+        <div
+          className="main__card__carousel--slides"
+          style={{ transform: `translateX(${slideX}vw)` }}
+        >
+          {[...Array(card.carousel).keys()].map((item, index) => (
+            <img
+              src={`/assets/images/cards/${card.id}_${item}.jpg`}
+              alt="carousel"
+              className="main__card__carousel--item"
+              key={index}
+            />
           ))}
         </div>
       </div>
       <div className="main__card__content">
         <h1>Boxes Ext</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, doloremque, voluptas, quia, quos, aspernatur, fugiat
-          doloribus, voluptatem, dolores, quisquam, quod, asperiores
-          consequuntur, voluptatum, doloremque, quibusdam, quos, aspernatur,
-          fugiat doloribus, voluptatem, dolores, quisquam, quod, asperiores
-          consequuntur, voluptatum, doloremque, quibusdam, quos, aspernatur,
-          fugiat doloribus, voluptatem, dolores, quisquam, quod, asperiores
-          consectetur, voluptatum, doloremque, quibusdam, quos, aspernatur,
-          fugiat doloribus, voluptatem, dolores, quisquam, quod, asperiores
-          quia, voluptatibus, doloremque
-        </p>
+        <p></p>
       </div>
     </div>
   );
