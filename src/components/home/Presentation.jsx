@@ -2,7 +2,7 @@ import React from "react";
 
 const Presentation = () => {
   return (
-    <div className="home__main__presentation">
+    <div className="main__presentation">
       <h1>Les Ecuries de la Selle</h1>
       <p>
         Depuis 2020, Les Écuries de la Selle accueillent les cavaliers

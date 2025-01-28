@@ -2,9 +2,9 @@ import React from "react";
 
 const Introduction = () => {
   const scrollEvent = () => {
-    const viewportHeight = window.innerHeight - 140;
-    window.scrollBy({
-      top: viewportHeight,
+    const target = window.innerHeight - 140;
+    window.scrollTo({
+      top: target,
     });
   };
   return (
