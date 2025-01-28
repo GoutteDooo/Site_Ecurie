@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
   const scrollEvent = () => {
-    const viewportHeight = window.innerHeight;
+    const viewportHeight = window.innerHeight - 140;
     window.scrollBy({
       top: viewportHeight,
     });

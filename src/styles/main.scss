@@ -11,7 +11,7 @@
 @import "./components/cards";
 @import "./components/form";
 @import "./components/anchor";
-@import "./components/home/main";
+@import "./components/titles";
 /* LAYOUTS */
 @import "./layouts/footer";
 @import "./layouts/navbar";
@@ -19,6 +19,7 @@
 @import "./pages/about";
 @import "./pages/contact";
 @import "./pages/home";
+@import "./pages/home/main";
 /* THEMES */
 @import "./themes/dark";
 @import "./themes/light";
