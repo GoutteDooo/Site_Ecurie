@@ -14,8 +14,17 @@ const Card = ({ card }) => {
 
   return (
     <div className="main__card">
-      <div className="main__card__carousel">
-        <img src={`/assets/images/carousel/${card.id}.jpg`} />
+      <div className="main__card__carousel--viewport">
+        <div className="main__card__carousel--carousel">
+          {card.carousel.map((item, index) => (
+            <div className="main__card__carousel--item" key={index}>
+              <img
+                src={`/assets/images/accueil/carousel/${item}.jpg`}
+                alt="carousel"
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="main__card__content">
         <h1>Boxes Ext</h1>
