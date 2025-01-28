@@ -1,7 +1,6 @@
 .home {
-  height: 300vh;
   overflow-x: hidden;
-  &__presentation {
+  &__introduction {
     height: 100vh;
     position: relative;
     &__video {
@@ -12,7 +11,7 @@
     }
     &__content {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       color: $bg-color;
       width: 100%;

@@ -1,10 +1,12 @@
 import React from "react";
-import Presentation from "../components/home/Presentation";
+import Introduction from "../components/home/Introduction";
+import Main from "../components/home/Main";
 
 const Home = () => {
   return (
     <div className="home">
-      <Presentation />
+      <Introduction />
+      <Main />
     </div>
   );
 };
