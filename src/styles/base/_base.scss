@@ -10,3 +10,18 @@ body {
   box-sizing: border-box;
   margin-top: 70px;
 }
+
+button {
+  outline: none;
+  border: 2px solid $bg-color;
+  background: none;
+  color: $bg-color;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+  &:hover {
+    background: rgba(255, 255, 255, 0.31);
+  }
+}
