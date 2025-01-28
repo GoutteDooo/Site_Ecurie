@@ -2,10 +2,11 @@
   "cards": [
     {
       "id": 1,
+      "carousel": 2,
       "title": "12 Boxes Extérieurs",
       "description": [
         "Vue panoramique sur la carrière",
-        "Fenêtres Verre Security ouvrables",
+        "Fenêtres Verre Securit ouvrables",
         "12 m²"
       ]
     },

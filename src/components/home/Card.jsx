@@ -2,12 +2,21 @@ import React from "react";
 
 /**
  * Affiche les différentes Installations de l'Ecurie
+ * @param {Object} card
+ * card.id : String
+ * card.carousel : Number (nombre d'images dans le carousel)
+ * card.title : String
+ * card.description : Array de Strings
  * @returns
  */
-const Card = () => {
+const Card = ({ card }) => {
+  console.log(card);
+
   return (
     <div className="main__card">
-      <div className="main__card__carousel">CAROUSEL</div>
+      <div className="main__card__carousel">
+        <img src={`/assets/images/carousel/${card.id}.jpg`} />
+      </div>
       <div className="main__card__content">
         <h1>Boxes Ext</h1>
         <p>
