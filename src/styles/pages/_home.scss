@@ -12,7 +12,7 @@
     }
     &__content {
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 50%;
       color: $bg-color;
       width: 100%;
@@ -46,7 +46,16 @@
         }
       }
       &--button {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        button {
+          background: rgba(255, 255, 255, 0.159);
+          font-family: $roboto, sans-serif;
+          &:hover {
+            background: none;
+            color: $third-color;
+            border-color: $third-color;
+          }
+        }
       }
     }
   }
