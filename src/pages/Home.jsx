@@ -1,45 +1,10 @@
 import React from "react";
+import Presentation from "../components/home/Presentation";
 
 const Home = () => {
-  const scrollEvent = () => {
-    const viewportHeight = window.innerHeight;
-    window.scrollBy({
-      top: viewportHeight,
-    });
-  };
-
   return (
     <div className="home">
-      <div className="home__presentation">
-        <video
-          className="home__presentation__video"
-          autoPlay
-          muted
-          loop
-          poster="/assets/images/accueil_mobile.jpg"
-        >
-          <source
-            src="/assets/videos/presentation-light.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div className="home__presentation__content">
-          <div
-            className="home__presentation__content--logo"
-            onClick={scrollEvent}
-          ></div>
-          <div className="home__presentation__content--titles">
-            <h1>
-              Bienvenue aux <br></br>Ecuries de la Selle
-            </h1>
-            <h2>Ecuries familiales à Saulzoir</h2>
-          </div>{" "}
-          <div className="home__presentation__content--button">
-            <button onClick={scrollEvent}>DECOUVRIR</button>
-          </div>
-        </div>
-      </div>
+      <Presentation />
     </div>
   );
 };
