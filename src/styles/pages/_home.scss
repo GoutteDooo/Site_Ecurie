@@ -1,12 +1,53 @@
 .home {
   height: 300vh;
+  overflow-x: hidden;
   &__presentation {
     height: 100vh;
+    position: relative;
     &__video {
       height: 100%;
       object-fit: cover;
       z-index: -1;
-      filter: brightness(0.6) grayscale(10%);
+      filter: brightness(0.5) grayscale(20%);
+    }
+    &__content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      color: $bg-color;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      @include verticalCenter;
+      flex-direction: column;
+      &--logo {
+        background-image: url("/assets/images/logo.jpg");
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        border-radius: 30px;
+        margin-bottom: 1.2rem;
+      }
+      &--titles {
+        width: min(70%, 400px);
+        h1 {
+          font-size: 1.8rem;
+          font-family: $crimson, serif;
+          letter-spacing: 0.05rem;
+          line-height: 2rem;
+          text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.246);
+        }
+        h2 {
+          font-size: 0.7rem;
+          font-family: $roboto, sans-serif;
+          letter-spacing: 0.1rem;
+          margin-top: 0.5rem;
+          color: $third-color;
+        }
+      }
+      &--button {
+        margin-top: 1rem;
+      }
     }
   }
 }
