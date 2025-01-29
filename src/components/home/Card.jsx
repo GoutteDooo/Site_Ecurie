@@ -46,8 +46,10 @@ const Card = ({ card }) => {
         </div>
       </div>
       <div className="main__card__content">
-        <h1>Boxes Ext</h1>
-        <p></p>
+        <h1>{card.title}</h1>
+        {card.description.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
       </div>
     </div>
   );
