@@ -1,13 +1,13 @@
 .carousel {
   &--viewport {
+    position: relative;
     height: calc(0.7 * $vh);
     width: 100%;
-    overflow: hidden;
-    position: relative;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
     .carousel--arrow {
       position: absolute;
-      z-index: 100;
+      z-index: 1;
       width: 40%;
       height: 100%;
       top: 50%;
@@ -50,5 +50,24 @@
     background-size: cover;
     background-position: center;
     object-fit: contain;
+    &.filter {
+      position: relative;
+      filter: brightness(0.6) saturate(1.5) contrast(1.2);
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: min(80%, 300px);
+        background: #5c6bc05e;
+        font-family: $roboto, sans-serif;
+        pointer-events: auto;
+        &:hover {
+          background: none;
+          color: $third-color;
+          border-color: $third-color;
+        }
+      }
+    }
   }
 }

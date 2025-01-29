@@ -36,7 +36,9 @@ const Carousel = ({ card }) => {
                   backgroundImage: `url(/assets/images/cards/${card.id}_filter.jpg)`,
                 }}
                 key={index}
-              ></div>
+              >
+                <button>DÉCOUVRIR TOUTES NOS INSTALLATIONS</button>
+              </div>
             );
           } else {
             return (
