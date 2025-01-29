@@ -13,6 +13,9 @@ const Carousel = ({ card }) => {
       setSlideX((prevState) => prevState + direction);
     }
   };
+
+  const isFilter = (index) => card.carousel - 1 === index && card.filter;
+
   return (
     <div className="carousel--viewport">
       <div className="carousel--arrow" onClick={() => handleSlide(100)}></div>
@@ -24,15 +27,29 @@ const Carousel = ({ card }) => {
           width: `calc(100% * ${card.carousel})`,
         }}
       >
-        {[...Array(card.carousel).keys()].map((item, index) => (
-          <div
-            className="carousel--item"
-            style={{
-              backgroundImage: `url(/assets/images/cards/${card.id}_${item}.jpg)`,
-            }}
-            key={index}
-          ></div>
-        ))}
+        {[...Array(card.carousel).keys()].map((_, index) => {
+          if (isFilter(index)) {
+            return (
+              <div
+                className={`carousel--item filter`}
+                style={{
+                  backgroundImage: `url(/assets/images/cards/${card.id}_filter.jpg)`,
+                }}
+                key={index}
+              ></div>
+            );
+          } else {
+            return (
+              <div
+                className={`carousel--item `}
+                style={{
+                  backgroundImage: `url(/assets/images/cards/${card.id}_${index}.jpg)`,
+                }}
+                key={index}
+              ></div>
+            );
+          }
+        })}
       </div>
     </div>
   );

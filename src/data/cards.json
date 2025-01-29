@@ -22,12 +22,14 @@
     },
     {
       "id": 3,
+      "carousel": 9,
       "title": "Les Autres Installations",
       "description": [
         "Carrière de 30m x 55m",
         "Manège couvert de 25m x 15m",
-        "3 paddocks de 75m x 25m et 3 de 50m x 25m"
-      ]
+        "6 paddocks allant de 75m x 25m à 50m x 25m"
+      ],
+      "filter": true
     }
   ]
 }
