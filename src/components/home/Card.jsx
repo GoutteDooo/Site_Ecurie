@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Carousel from "./Carousel";
 
 /**
  * Affiche les différentes Installations de l'Ecurie
@@ -23,28 +24,10 @@ const Card = ({ card }) => {
       setSlideX((prevState) => prevState + direction);
     }
   };
+
   return (
     <div className="main__card">
-      <div className="main__card__carousel--viewport">
-        <div className="carousel--arrow" onClick={() => handleSlide(100)}></div>
-        <div
-          className="carousel--arrow"
-          onClick={() => handleSlide(-100)}
-        ></div>
-        <div
-          className="main__card__carousel--slides"
-          style={{ transform: `translateX(${slideX}vw)` }}
-        >
-          {[...Array(card.carousel).keys()].map((item, index) => (
-            <img
-              src={`/assets/images/cards/${card.id}_${item}.jpg`}
-              alt="carousel"
-              className="main__card__carousel--item"
-              key={index}
-            />
-          ))}
-        </div>
-      </div>
+      <Carousel card={card} />
       <div className="main__card__content">
         <h1>{card.title}</h1>
         {card.description.map((item, index) => (

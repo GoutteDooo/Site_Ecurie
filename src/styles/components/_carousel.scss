@@ -1,0 +1,50 @@
+.carousel {
+  &--viewport {
+    height: calc(0.7 * $vh);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .carousel--arrow {
+      position: absolute;
+      z-index: 100;
+      width: 40%;
+      height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      @include verticalCenter;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        background: linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.11) 100%
+        );
+      }
+      &:nth-child(2) {
+        right: 0;
+        width: 60%;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.11) 100%
+          );
+        }
+      }
+    }
+  }
+  &--slides {
+    height: 100%;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+  }
+  &--item {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
