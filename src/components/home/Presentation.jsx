@@ -8,14 +8,17 @@ const Presentation = () => {
         Depuis 2021, Les Écuries de la Selle accueillent les cavaliers
         propriétaires dans un cadre familial, chaleureux et convivial à
         Saulzoir.
-        <br />
+      </p>
+      <p>
         Dédiée au bien-être des chevaux et à l'accompagnement des cavaliers, nos
         écuries proposent des installations modernes et un service de qualité
         pour répondre aux besoins de chaque propriétaire.
-        <br />
+      </p>
+      <p>
         Rejoignez-nous et partagez votre passion dans une ambiance sereine et
         dynamique !
       </p>
+      <div className="scroll-arrow">V</div>
     </div>
   );
 };

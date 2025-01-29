@@ -1,5 +1,6 @@
 .main {
   &__presentation {
+    position: relative;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -7,6 +8,7 @@
     width: 100%;
     padding: 60px 40px;
     box-sizing: border-box;
+    height: $vh;
     h1 {
       font-weight: 700;
       font-size: 1.6rem;
@@ -27,8 +29,11 @@
     }
     p {
       font-size: 0.85rem;
-      margin-top: 3rem;
       line-height: 1.55rem;
+      margin-bottom: 1rem;
+      &:first-of-type {
+        margin-top: 3rem;
+      }
     }
   }
 }
