@@ -19,15 +19,19 @@ const Carousel = ({ card }) => {
       <div className="carousel--arrow" onClick={() => handleSlide(-100)}></div>
       <div
         className="carousel--slides"
-        style={{ transform: `translateX(${slideX}vw)` }}
+        style={{
+          transform: `translateX(${slideX}vw)`,
+          width: `calc(100vw * ${card.carousel})`,
+        }}
       >
         {[...Array(card.carousel).keys()].map((item, index) => (
-          <img
-            src={`/assets/images/cards/${card.id}_${item}.jpg`}
-            alt="carousel"
+          <div
             className="carousel--item"
+            style={{
+              backgroundImage: `url(/assets/images/cards/${card.id}_${item}.jpg)`,
+            }}
             key={index}
-          />
+          ></div>
         ))}
       </div>
     </div>

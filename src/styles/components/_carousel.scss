@@ -40,11 +40,13 @@
   &--slides {
     height: 100%;
     display: flex;
+    flex-wrap: nowrap;
     transition: all 0.3s ease-in-out;
   }
   &--item {
     height: 100%;
     width: 100vw;
-    object-fit: cover;
+    background-size: cover;
+    object-fit: contain;
   }
 }
