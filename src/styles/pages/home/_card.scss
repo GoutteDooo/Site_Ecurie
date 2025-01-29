@@ -1,5 +1,6 @@
 .main {
   &__card {
+    position: relative;
     height: $vh;
     width: 100%;
     &__content {

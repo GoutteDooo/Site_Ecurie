@@ -1,14 +1,25 @@
 import React from "react";
 import scrollEvent from "../utils/functions/scrollEvent";
 
-const ScrollArrow = () => {
+/**
+ * Arrow de scrolling en bas de certains composants pour aider
+ * l'utilisateur a scroll plus facilement
+ * @param {number} size définit la taille du composant
+ * @param {number} scrolling définit une target : scrolling * 100vh
+ * @returns
+ */
+const ScrollArrow = ({ size = 100, scrolling = 2 }) => {
   return (
-    <div className="scroll-arrow" onClick={() => scrollEvent(2)}>
+    <div
+      className="scroll-arrow"
+      onClick={() => scrollEvent(scrolling)}
+      style={{ height: size }}
+    >
       <div className="arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={100}
-          height={100}
+          width={(100 * size) / 100}
+          height={(100 * size) / 100}
           transform={"rotate(90 0 0)"}
           viewBox="0 0 24 24"
         >

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Carousel from "./Carousel";
+import ScrollArrow from "../ScrollArrow";
 
 /**
  * Affiche les différentes Installations de l'Ecurie
@@ -34,6 +35,7 @@ const Card = ({ card }) => {
           <p key={index}>{item}</p>
         ))}
       </div>
+      <ScrollArrow size={50} scrolling={Number(card.id) + 2} />
     </div>
   );
 };

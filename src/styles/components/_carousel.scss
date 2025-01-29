@@ -4,6 +4,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
     .carousel--arrow {
       position: absolute;
       z-index: 100;
@@ -45,7 +46,7 @@
   }
   &--item {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     object-fit: contain;
   }

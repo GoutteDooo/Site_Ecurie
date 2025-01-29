@@ -20,8 +20,8 @@ const Carousel = ({ card }) => {
       <div
         className="carousel--slides"
         style={{
-          transform: `translateX(${slideX}vw)`,
-          width: `calc(100vw * ${card.carousel})`,
+          transform: `translateX(${slideX / card.carousel}%)`,
+          width: `calc(100% * ${card.carousel})`,
         }}
       >
         {[...Array(card.carousel).keys()].map((item, index) => (
