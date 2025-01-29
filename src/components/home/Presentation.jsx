@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollArrow from "../ScrollArrow";
 
 const Presentation = () => {
   return (
@@ -18,7 +19,7 @@ const Presentation = () => {
         Rejoignez-nous et partagez votre passion dans une ambiance sereine et
         dynamique !
       </p>
-      <div className="scroll-arrow">V</div>
+      <ScrollArrow />
     </div>
   );
 };

@@ -1,12 +1,14 @@
 import React from "react";
+import scrollEvent from "../utils/functions/scrollEvent";
 
-const Arrow = () => {
+const ScrollArrow = () => {
   return (
-    <div>
+    <div className="scroll-arrow" onClick={() => scrollEvent(2)}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={24}
-        height={24}
+        width={100}
+        height={100}
+        transform={"rotate(90 0 0)"}
         viewBox="0 0 24 24"
       >
         <path
@@ -18,4 +20,4 @@ const Arrow = () => {
   );
 };
 
-export default Arrow;
+export default ScrollArrow;
