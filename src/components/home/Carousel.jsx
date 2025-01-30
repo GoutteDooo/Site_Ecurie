@@ -26,7 +26,8 @@ const Carousel = ({ card }) => {
     }
   };
 
-  const isFilter = (index) => numberImages - 2 === index && card.filter;
+  const isFilter = (index) =>
+    (numberImages - 2 === index && card.filter) || (index === 0 && card.filter);
 
   return (
     <div className="carousel--viewport">

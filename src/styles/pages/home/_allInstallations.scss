@@ -1,0 +1,17 @@
+.all-installations {
+  @include verticalCenter;
+  width: 100%;
+  height: 150px;
+  background: $main-color;
+  button {
+    width: min(300px, 80%);
+    font-size: 0.65rem;
+    height: 50px;
+    padding: 0.5rem;
+    &:hover {
+      background: $bg-color;
+      color: $main-color;
+      border: $main-color;
+    }
+  }
+}
