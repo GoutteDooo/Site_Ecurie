@@ -1,0 +1,65 @@
+.horaires {
+  $container-width: min(75%, 400px);
+  $container-height: 300px;
+  position: relative;
+  height: 400px;
+  @include verticalCenter;
+  background-image: url("/assets/images/horaires.jpg");
+  background-size: cover;
+  background-position: 0 100%;
+  z-index: 0;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: brightness(0.7) saturate(150%) sepia(10%);
+  }
+  &__blur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $container-width;
+    height: $container-height;
+    backdrop-filter: blur(2px);
+    border-radius: 19px;
+    background-color: rgba(163, 155, 205, 0.39);
+    z-index: 1;
+  }
+  &__container {
+    width: $container-width;
+    height: $container-height;
+    padding: 1rem 0;
+    @include verticalCenter;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: $bg-color;
+      letter-spacing: normal;
+      position: relative;
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: $bg-color;
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      color: $secondary-color;
+      margin-bottom: 1rem;
+      &.horaires--days {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
