@@ -3,7 +3,10 @@ import React from "react";
 const AllInstallations = () => {
   return (
     <div className="all-installations">
-      <button>DÉCOUVRIR TOUTES NOS INSTALLATIONS</button>
+      <button>
+        {" "}
+        <span>DÉCOUVRIR TOUTES NOS INSTALLATIONS</span>
+      </button>
     </div>
   );
 };

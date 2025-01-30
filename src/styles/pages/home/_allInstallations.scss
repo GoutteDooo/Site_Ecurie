@@ -5,13 +5,18 @@
   background: $main-color;
   button {
     width: min(300px, 80%);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     height: 50px;
-    padding: 0.5rem;
+    padding: 0.5rem 0rem;
+    span {
+      display: inline-block;
+      transform: scaleX(0.85);
+      width: 100%;
+      white-space: nowrap;
+    }
     &:hover {
       background: $bg-color;
       color: $main-color;
-      border: $main-color;
     }
   }
 }
