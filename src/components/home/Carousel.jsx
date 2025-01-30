@@ -1,21 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Carousel = ({ card }) => {
   const [slideX, setSlideX] = useState(-100);
+  const [carouselEnding, setCarouselEnding] = useState(false);
   const numberImages = card.carousel + 2;
   const handleSlide = (direction) => {
     const newX = slideX + direction;
     const indexes = numberImages;
+    setCarouselEnding(false);
     if (newX === 0) {
       setSlideX(0);
-      //téléporte à la fin
-      setTimeout(() => setSlideX(-(indexes - 2) * 100), 300);
-    } else if (newX < -(indexes - 1) * 100) {
-      setSlideX(0);
+      setTimeout(() => {
+        setSlideX(-(indexes - 2) * 100);
+        setCarouselEnding(true);
+      }, 300);
+    } else if (newX === -(indexes - 1) * 100) {
+      //si newX atteint l'index de la dernière image
+      setSlideX((prevState) => prevState + direction);
+      setTimeout(() => {
+        setSlideX(-100);
+        setCarouselEnding(true);
+      }, 300);
     } else {
       setSlideX((prevState) => prevState + direction);
     }
-    console.log(newX);
   };
 
   const isFilter = (index) => numberImages - 2 === index && card.filter;
@@ -29,9 +37,7 @@ const Carousel = ({ card }) => {
         style={{
           transform: `translateX(${slideX / numberImages}%)`,
           width: `calc(100% * ${numberImages})`,
-          transition: `all ${
-            slideX == -(numberImages - 2) * 100 ? "0s " : "0.3s "
-          }ease-in-out`,
+          transition: `all ${carouselEnding ? "0s" : "0.3s"} ease-in-out`,
         }}
       >
         {[...Array(numberImages).keys()].map((_, index) => (
