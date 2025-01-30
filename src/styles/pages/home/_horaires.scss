@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    backdrop-filter: brightness(0.7) saturate(150%) sepia(10%);
+    backdrop-filter: brightness(0.8) saturate(150%) sepia(10%);
   }
   &__blur {
     position: absolute;
@@ -54,11 +54,17 @@
       }
     }
     p {
-      font-size: 0.8rem;
-      color: $secondary-color;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: $bg-color;
+      margin-bottom: 0.5rem;
       &.horaires--days {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
+        font-style: italic;
+        font-weight: 300;
+      }
+      &.horaires--hours {
+        font-weight: 700;
+        font-size: 1.7rem;
       }
     }
   }
