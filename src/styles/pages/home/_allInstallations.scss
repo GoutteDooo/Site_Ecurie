@@ -1,7 +1,7 @@
 .all-installations {
   @include verticalCenter;
   width: 100%;
-  height: 150px;
+  height: 120px;
   background: $main-color;
   button {
     width: min(300px, 80%);
