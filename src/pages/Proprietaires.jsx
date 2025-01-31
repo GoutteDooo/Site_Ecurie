@@ -4,7 +4,7 @@ import IntroAnnexe from "../components/IntroAnnexe";
 const Proprietaires = () => {
   return (
     <div className="proprietaires">
-      <IntroAnnexe />
+      <IntroAnnexe videoLink="proprietaires" />
     </div>
   );
 };
