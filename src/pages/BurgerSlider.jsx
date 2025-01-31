@@ -14,45 +14,22 @@ const BurgerSlider = ({ active, setActive }) => {
         ></div>
       </Link>
       <div className="burger-slider__content">
-        <Link to="/">
-          <div
-            className="burger-slider__content--item"
-            onClick={() => setActive(false)}
-          >
-            Accueil
-          </div>
+        <Link to="/" onClick={() => setActive(false)}>
+          <div className="burger-slider__content--item">Accueil</div>
         </Link>
-        <Link to="/proprietaires">
-          <div
-            className="burger-slider__content--item"
-            onClick={() => setActive(false)}
-          >
+        <Link to="/proprietaires" onClick={() => setActive(false)}>
+          <div className="burger-slider__content--item">
             Ecurie de Propriétaires
           </div>
         </Link>
-        <Link to="/installations">
-          <div
-            className="burger-slider__content--item"
-            onClick={() => setActive(false)}
-          >
-            Installations
-          </div>
+        <Link to="/installations" onClick={() => setActive(false)}>
+          <div className="burger-slider__content--item">Installations</div>
         </Link>
-        <Link to="/cours">
-          <div
-            className="burger-slider__content--item"
-            onClick={() => setActive(false)}
-          >
-            Les Cours
-          </div>
+        <Link to="/cours" onClick={() => setActive(false)}>
+          <div className="burger-slider__content--item">Les Cours</div>
         </Link>
-        <Link to="/contacts">
-          <div
-            className="burger-slider__content--item"
-            onClick={() => setActive(false)}
-          >
-            Nous Contacter
-          </div>
+        <Link to="/contacts" onClick={() => setActive(false)}>
+          <div className="burger-slider__content--item">Nous Contacter</div>
         </Link>
       </div>
     </div>

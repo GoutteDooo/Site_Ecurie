@@ -11,9 +11,11 @@
   padding: 0 30px;
   box-sizing: border-box;
   overflow: hidden;
-  img {
-    cursor: pointer;
-    height: 120%;
+  &--logo {
+    background-image: url("/assets/images/logo.jpg");
+    background-size: cover;
+    height: 90px;
+    width: 90px;
   }
   .menu-burger {
     height: 50px;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import BurgerSlider from "../pages/BurgerSlider";
 
 const Navbar = () => {
@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <img src="/assets/images/logo.jpg" alt="logo" />
+        <Link to="/">
+          <div className="navbar--logo"></div>
+        </Link>
         <div className="menu-burger" onClick={handleClick}>
           <div className={`line ${active ? "active" : "inactive"}`}></div>
           <div className={`line ${active ? "active" : "inactive"}`}></div>
