@@ -29,6 +29,17 @@ const Carousel = ({ card, compteur = false }) => {
   const isFilter = (index) =>
     (numberImages - 2 === index && card.filter) || (index === 0 && card.filter);
 
+  const calculatePictureIndex = () => {
+    const indexParsed = -(slideX / 100);
+    if (slideX === 0) {
+      return numberImages - 2;
+    } else if (indexParsed === numberImages - 1) {
+      return 1;
+    } else {
+      return indexParsed;
+    }
+  };
+
   return (
     <div className="carousel--viewport">
       <div className="carousel--arrow" onClick={() => handleSlide(100)}></div>
@@ -65,7 +76,9 @@ const Carousel = ({ card, compteur = false }) => {
       </div>
       {compteur && (
         <div className="carousel--counter">
-          <p>1 / {card.carousel}</p>
+          <p>
+            {calculatePictureIndex()} / {card.carousel}
+          </p>
         </div>
       )}
     </div>
