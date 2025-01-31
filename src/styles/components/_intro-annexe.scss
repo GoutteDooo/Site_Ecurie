@@ -5,7 +5,7 @@
   &__bg-video {
     position: relative;
     width: 100%;
-    height: calc(0.67 * $vh);
+    height: calc(0.6 * $vh);
     z-index: -1;
     h1 {
       position: absolute;
@@ -24,15 +24,15 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
-      filter: brightness(0.65) saturate(1.5) contrast(1.2);
+      filter: brightness(0.65) saturate(1.3) contrast(1.2);
     }
   }
   &__description {
     width: 100%;
-    height: calc((1 - 0.67) * $vh);
-    text-align: center;
+    height: calc((1 - 0.6) * $vh);
     color: $bg-color;
-    font-size: 1.2rem;
     background: $main-color;
+    padding: 2rem 3rem;
+    line-height: 2rem;
   }
 }

@@ -1,0 +1,22 @@
+{
+  "annexes": [
+    {
+      "id": 1,
+      "title": "Écurie de Propriétaires",
+      "description": "Les Écuries de la Selle proposent des pensions pour chevaux. Lorsque votre cheval est en pension chez nous, vous bénéficiez d'avantages que vous pouvez découvrir ci-dessous : ",
+      "videoLink": "proprietaires"
+    },
+    {
+      "id": 2,
+      "title": "Annexe 2",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sapiente voluptas obcaecati praesentium. Delectus, quas provident cumque veritatis vel quam voluptas laudantium repellat quo eaque!",
+      "path": "/assets/images/proprietaires/annexes/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Annexe 3",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sapiente voluptas obcaecati praesentium. Delectus, quas provident cumque veritatis vel quam voluptas laudantium repellat quo eaque!",
+      "path": "/assets/images/proprietaires/annexes/3.jpg"
+    }
+  ]
+}

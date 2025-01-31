@@ -6,11 +6,11 @@ import React from "react";
  * puis une légère description
  * @returns
  */
-const IntroAnnexe = ({ videoLink }) => {
+const IntroAnnexe = ({ annexe }) => {
   return (
     <div className="intro-annexe">
       <div className="intro-annexe__bg-video">
-        <h1>Écurie de Propriétaires</h1>
+        <h1>{annexe.title}</h1>
         <video
           className="intro-annexe__bg-video--video"
           autoPlay
@@ -19,17 +19,13 @@ const IntroAnnexe = ({ videoLink }) => {
           poster="/assets/images/accueil_mobile.jpg"
         >
           <source
-            src={`/assets/videos/intro-${videoLink}.mp4`}
+            src={`/assets/videos/intro-${annexe.videoLink}.mp4`}
             type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="intro-annexe__description">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-        sapiente voluptas obcaecati praesentium. Delectus, quas provident cumque
-        veritatis vel quam voluptas laudantium repellat quo eaque!
-      </div>
+      <div className="intro-annexe__description">{annexe.description}</div>
     </div>
   );
 };
