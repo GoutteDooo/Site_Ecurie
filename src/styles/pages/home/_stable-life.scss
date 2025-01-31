@@ -1,5 +1,6 @@
 .stable-life {
   background: $main-color;
+  padding-bottom: 2rem;
   .stable-life--title {
     padding: 1rem;
     @include verticalCenter;
@@ -23,7 +24,8 @@
   }
   .stable-life--carousel {
     overflow: hidden;
-    border: 5px solid $main-color;
     border-radius: 20px;
+    margin: 0 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
   }
 }

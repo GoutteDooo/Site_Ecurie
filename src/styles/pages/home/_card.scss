@@ -3,14 +3,33 @@
     position: relative;
     height: $vh;
     width: 100%;
+    .carousel--viewport {
+      height: calc(0.67 * $vh);
+    }
     &__content {
+      height: calc((1 - 0.33) * $vh);
+      @include verticalCenter;
+      justify-content: start;
+      flex-direction: column;
       h1 {
+        position: relative;
         text-align: center;
-        margin: 1rem 0;
+        margin: 1rem 0 1.5rem;
         font-weight: 700;
         font-size: 1.7rem;
         color: $main-color;
         letter-spacing: normal;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -0.4rem;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 2px;
+          width: 120%;
+          background-color: $main-color;
+          border-radius: 50px;
+        }
       }
       p {
         text-align: center;

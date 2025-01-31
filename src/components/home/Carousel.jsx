@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Carousel = ({ card, compteur = false }) => {
+const Carousel = ({ card, compteur = false, compteurSize = 70 }) => {
   const [slideX, setSlideX] = useState(-100);
   const [carouselEnding, setCarouselEnding] = useState(false);
   const numberImages = card.carousel + 2;
@@ -75,7 +75,10 @@ const Carousel = ({ card, compteur = false }) => {
         ))}
       </div>
       {compteur && (
-        <div className="carousel--counter">
+        <div
+          className="carousel--counter"
+          style={{ transform: `translateX(-50%) scale(${compteurSize / 100})` }}
+        >
           <p>
             {calculatePictureIndex()} / {card.carousel}
           </p>
