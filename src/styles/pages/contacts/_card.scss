@@ -10,8 +10,8 @@
     // filter: hue-rotate(20deg);
     transition: all 0.1s ease-in-out;
     .contacts__card--icon {
-      transform: scale(1.2);
       transition: all 0.1s ease-in-out;
+      animation: card-hover 0.5s ease-in-out forwards;
     }
   }
   &--icon {
@@ -46,5 +46,17 @@
     position: absolute;
     left: 0;
     bottom: 0.4rem;
+  }
+}
+
+@keyframes card-hover {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(-10px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
   }
 }

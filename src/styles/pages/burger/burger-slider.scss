@@ -41,5 +41,11 @@
         font-weight: bold;
       }
     }
+    &--item {
+      &.active {
+        color: $main-color;
+        font-weight: bold;
+      }
+    }
   }
 }
