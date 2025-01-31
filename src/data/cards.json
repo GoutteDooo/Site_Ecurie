@@ -3,6 +3,7 @@
     {
       "id": 1,
       "carousel": 5,
+      "path": "/assets/images/cards/",
       "title": "12 Boxes Extérieurs",
       "description": [
         "Vue panoramique sur la carrière",
@@ -13,6 +14,7 @@
     {
       "id": 2,
       "carousel": 4,
+      "path": "/assets/images/cards/",
       "title": "13 Boxes Intérieurs",
       "description": [
         "Grand espace d'ouverture pour la tête",
@@ -23,6 +25,7 @@
     {
       "id": 3,
       "carousel": 9,
+      "path": "/assets/images/cards/",
       "title": "Les Autres Installations",
       "description": [
         "Carrière de 30m x 55m",
@@ -30,6 +33,11 @@
         "6 paddocks de + de 1000m²"
       ],
       "filter": true
+    },
+    {
+      "id": 4,
+      "path": "/assets/images/stable_life/",
+      "carousel": 87
     }
   ]
 }

@@ -4,6 +4,7 @@ import Card from "./Card";
 import { cards } from "../../data/cards.json";
 import AllInstallations from "./AllInstallations";
 import Horaires from "./Horaires";
+import StableLife from "./StableLife";
 /**
  * Composant principal affichant le corps de l'accueil
  * @returns
@@ -17,6 +18,7 @@ const Main = () => {
       <Card card={cards[2]} />
       <AllInstallations />
       <Horaires />
+      <StableLife card={cards[3]} />
     </div>
   );
 };

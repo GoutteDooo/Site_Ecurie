@@ -1,0 +1,29 @@
+.stable-life {
+  background: $main-color;
+  .stable-life--title {
+    padding: 1rem;
+    @include verticalCenter;
+    background: $main-color;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $bg-color;
+      letter-spacing: normal;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $bg-color;
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+      }
+    }
+  }
+  .stable-life--carousel {
+    overflow: hidden;
+    border: 5px solid $main-color;
+    border-radius: 20px;
+  }
+}

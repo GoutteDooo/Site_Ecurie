@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-const Carousel = ({ card }) => {
+const Carousel = ({ card, compteur = false }) => {
   const [slideX, setSlideX] = useState(-100);
   const [carouselEnding, setCarouselEnding] = useState(false);
   const numberImages = card.carousel + 2;
@@ -45,7 +45,7 @@ const Carousel = ({ card }) => {
           <div
             className={`carousel--item ${isFilter(index) ? "filter" : ""}`}
             style={{
-              backgroundImage: `url(/assets/images/cards/${card.id}_${
+              backgroundImage: `url(${card.path}${card.id}_${
                 isFilter(index)
                   ? "filter"
                   : index == 0
@@ -63,6 +63,11 @@ const Carousel = ({ card }) => {
           </div>
         ))}
       </div>
+      {compteur && (
+        <div className="carousel--counter">
+          <p>1 / {card.carousel}</p>
+        </div>
+      )}
     </div>
   );
 };
