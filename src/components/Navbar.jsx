@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
+import BurgerSlider from "../pages/BurgerSlider";
 
 const Navbar = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = React.useState(false);
 
   const handleClick = () => {
     setActive(!active);
@@ -18,6 +19,7 @@ const Navbar = () => {
           <div className={`line ${active ? "active" : "inactive"}`}></div>
         </div>
       </div>
+      <BurgerSlider active={active} />
       <Outlet />
     </>
   );
