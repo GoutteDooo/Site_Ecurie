@@ -28,7 +28,7 @@ const Card = ({ card }) => {
 
   return (
     <div className="main__card">
-      <Carousel card={card} />
+      <Carousel card={card} compteur={true} />
       <div className="main__card__content">
         <h1>{card.title}</h1>
         {card.description.map((item, index) => (
