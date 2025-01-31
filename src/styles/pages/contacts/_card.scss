@@ -6,8 +6,13 @@
   position: relative;
   &:hover {
     color: $secondary-color;
-    transform: scale(1.05);
+    fill: $secondary-color;
+    // filter: hue-rotate(20deg);
     transition: all 0.1s ease-in-out;
+    .contacts__card--icon {
+      transform: scale(1.2);
+      transition: all 0.1s ease-in-out;
+    }
   }
   &--icon {
     align-content: center;
