@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/contacts/Card";
+import Map from "../components/contacts/Map";
 
 const icons = {
   phone: (
@@ -45,7 +46,7 @@ const Contacts = () => {
           content="Jean Jacques Rousseau, 59227 Saulzoir, France"
         />
       </div>
-      <iframe src="" frameBorder="0"></iframe>
+      <Map />
     </div>
   );
 };

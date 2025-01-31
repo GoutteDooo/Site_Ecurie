@@ -1,7 +1,7 @@
 .contacts {
   @include verticalCenter;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   width: 100%;
   height: $vh;
   h1 {

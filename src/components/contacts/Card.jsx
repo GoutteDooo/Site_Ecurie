@@ -5,14 +5,14 @@ const Card = ({ icon, content, link = false }) => {
   return (
     <>
       {link ? (
-        <Link to={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <div className="contacts__card">
             <div className="contacts__card--icon">{icon}</div>
             <div className="contacts__card--content">
               <p className="contacts__card--link">{content}</p>
             </div>
           </div>
-        </Link>
+        </a>
       ) : (
         <div className="contacts__card">
           <div className="contacts__card--icon">{icon}</div>
