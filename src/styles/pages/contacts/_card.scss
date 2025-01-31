@@ -3,15 +3,43 @@
   width: 100%;
   @include verticalCenter;
   justify-content: start;
+  position: relative;
+  &:hover {
+    color: $secondary-color;
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+  }
   &--icon {
+    align-content: center;
     height: 100%;
     min-width: 40px;
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: $secondary-color;
+    }
   }
   &--content {
     margin-left: 0.3rem;
     p {
       font-size: 0.9rem;
       color: black;
+      font-weight: bold;
+      line-height: 1.2rem;
+      &.contacts__card--link {
+        color: $secondary-color;
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
+  }
+  &:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-top: 1px dashed $secondary-color;
+    position: absolute;
+    left: 0;
+    bottom: 0.4rem;
   }
 }

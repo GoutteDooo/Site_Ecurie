@@ -17,5 +17,8 @@
     @include verticalCenter;
     flex-direction: column;
     width: min(300px, 80%);
+    a {
+      width: 100%;
+    }
   }
 }
