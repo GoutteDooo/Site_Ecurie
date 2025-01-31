@@ -7,7 +7,7 @@
       height: calc(0.67 * $vh);
     }
     &__content {
-      height: calc((1 - 0.33) * $vh);
+      height: calc((1 - 0.67) * $vh);
       @include verticalCenter;
       justify-content: start;
       flex-direction: column;
