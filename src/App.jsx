@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 //styles
 import "./styles/main.scss";
+import Contacts from "./pages/Contacts";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<Home />} />
+          <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
