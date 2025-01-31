@@ -8,9 +8,6 @@
   flex-direction: column;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
-  &.active {
-    transform: translateX(0);
-  }
   &__logo {
     background-image: url("/assets/images/logo.jpg");
     background-size: cover;
@@ -27,12 +24,13 @@
     height: 60%;
     font-family: "Crimson Text", serif;
     font-size: 1.75rem;
-    &--item {
+    a {
       cursor: pointer;
       width: 100%;
       height: 100%;
       text-align: center;
       align-content: center;
+      color: black;
       &:hover {
         color: $main-color;
         transform: scale(1.05);

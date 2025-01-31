@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className={`line ${active ? "active" : "inactive"}`}></div>
         </div>
       </div>
-      <BurgerSlider active={active} />
+      <BurgerSlider active={active} setActive={setActive} />
       <Outlet />
     </>
   );
