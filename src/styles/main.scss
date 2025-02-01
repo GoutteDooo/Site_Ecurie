@@ -21,6 +21,7 @@
 /* PAGES */
 @import "./pages/about";
 @import "./pages/contact";
+//Home
 @import "./pages/home";
 @import "./pages/home/main";
 @import "./pages/home/presentation";
@@ -28,9 +29,17 @@
 @import "./pages/home/all-installations";
 @import "./pages/home/horaires";
 @import "./pages/home/stable-life";
+//Burger Slider
 @import "./pages/burger/burger-slider";
+//Contacts
 @import "./pages/contacts/card";
 @import "./pages/contacts/map";
+//Installations
+@import "./pages/installations/installations";
+//Proprietaires
+@import "./pages/proprietaires/proprietaires";
+//Cours
+@import "./pages/cours/cours";
 /* THEMES */
 @import "./themes/dark";
 @import "./themes/light";

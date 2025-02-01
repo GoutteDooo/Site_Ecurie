@@ -2,11 +2,11 @@
   height: $vh;
   width: 100%;
   overflow: hidden;
+  position: relative;
   &__bg-media {
     position: relative;
     width: 100%;
     height: calc(0.5 * $vh);
-    z-index: -1;
     h1 {
       position: absolute;
       top: 50%;
@@ -24,7 +24,17 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      object-position: 50% 50%;
       filter: brightness(0.65) saturate(1.3) contrast(1.2);
+      z-index: -1;
+    }
+    &--image {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: 50% 50%;
+      filter: brightness(0.65) saturate(1.3) contrast(1.2);
+      z-index: -1;
     }
   }
   &__description {
@@ -32,10 +42,9 @@
     height: calc((1 - 0.5) * $vh);
     color: $bg-color;
     background: $main-color;
-    padding: 1.8rem 2.8rem;
+    padding: 0 2.8rem;
+    @include verticalCenter;
     p {
-      line-height: 1.7rem;
-      font-size: 0.9rem;
       strong {
         font-weight: 700;
       }
