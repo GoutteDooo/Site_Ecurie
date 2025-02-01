@@ -19,13 +19,15 @@ const IntroAnnexe = ({ annexe }) => {
           poster="/assets/images/accueil_mobile.jpg"
         >
           <source
-            src={`/assets/videos/intro-${annexe.videoLink}.mp4`}
+            src={`/assets/videos/intro-${annexe.videoLink}-light.mp4`}
             type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="intro-annexe__description">{annexe.description}</div>
+      <div className="intro-annexe__description">
+        <p>{annexe.description}</p>
+      </div>
     </div>
   );
 };

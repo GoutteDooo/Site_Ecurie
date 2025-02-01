@@ -8,15 +8,15 @@
     },
     {
       "id": 2,
-      "title": "Annexe 2",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sapiente voluptas obcaecati praesentium. Delectus, quas provident cumque veritatis vel quam voluptas laudantium repellat quo eaque!",
-      "path": "/assets/images/proprietaires/annexes/2.jpg"
+      "title": "Les Installations de l'Écurie",
+      "description": "Les Écuries de la Selle ont plusieurs installations à votre disposition. Celles-ci comprennent un manège couvert, une carrière en parfaite condition, et six grands paddocks offrant liberté et détente à vos chevaux. Chaque cavalier bénéficie d'un casier individuel ainsi que d'équipements adaptés au travail du cheval. Et ce n’est pas tout – d’autres aménagements optimisés vous attendent tout au long de votre découverte en explorant notre page.",
+      "videoLink": "installations"
     },
     {
       "id": 3,
-      "title": "Annexe 3",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sapiente voluptas obcaecati praesentium. Delectus, quas provident cumque veritatis vel quam voluptas laudantium repellat quo eaque!",
-      "path": "/assets/images/proprietaires/annexes/3.jpg"
+      "title": "Cours Individuels & Collectifs",
+      "description": "Les Écuries de la Selle proposent des cours classiques et éthologiques pour les cavaliers. Vous pouvez choisir entre un cours individuel ou un cours collectif. Ceux-ci sont adaptés à vos besoins et à vos compétences.",
+      "imageLink": "cours"
     }
   ]
 }

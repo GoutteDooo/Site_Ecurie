@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //pages
 import Home from "./pages/Home";
 import Proprietaires from "./pages/Proprietaires";
+import Installations from "./pages/Installations";
+import Cours from "./pages/Cours";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 //composants
@@ -19,6 +21,8 @@ function App() {
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<Home />} />
           <Route path="proprietaires" element={<Proprietaires />} />
+          <Route path="installations" element={<Installations />} />
+          <Route path="cours" element={<Cours />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Route>
