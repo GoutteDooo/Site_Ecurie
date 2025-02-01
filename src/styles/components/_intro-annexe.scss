@@ -2,7 +2,7 @@
   height: $vh;
   width: 100%;
   overflow: hidden;
-  &__bg-video {
+  &__bg-media {
     position: relative;
     width: 100%;
     height: calc(0.5 * $vh);
@@ -36,6 +36,9 @@
     p {
       line-height: 1.7rem;
       font-size: 0.9rem;
+      strong {
+        font-weight: 700;
+      }
     }
   }
 }
