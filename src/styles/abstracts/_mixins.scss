@@ -11,7 +11,8 @@
     width: 100%;
     background-color: $color;
     position: absolute;
-    left: 0;
+    transform: translateX(-50%);
+    left: 50%;
     bottom: -0.1rem;
   }
 }

@@ -1,2 +1,22 @@
 .proprietaires {
+  width: 100%;
+  &__prestations {
+    @include verticalCenter;
+    flex-direction: column;
+    h1 {
+      position: relative;
+      display: inline-block;
+      margin: 1.5rem auto;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: $main-color;
+      letter-spacing: normal;
+      @include underline($main-color);
+      &:after {
+        width: 120%;
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
+  }
 }
