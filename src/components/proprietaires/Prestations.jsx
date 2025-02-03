@@ -1,6 +1,6 @@
 import React from "react";
 import Bubble from "../Bubble";
-import { MAIN_COLOR, BG_COLOR } from "../../utils/variables";
+import { MAIN_COLOR, BG_COLOR, SECONDARY_COLOR } from "../../utils/variables";
 
 const Prestations = () => {
   // window.scrollTo(0, 0);
@@ -9,30 +9,26 @@ const Prestations = () => {
     <div className="proprietaires__prestations">
       <h1>Nos Prestations</h1>
       <Bubble
-        bgColor={MAIN_COLOR}
-        textColor={BG_COLOR}
+        bgColor={BG_COLOR}
+        textColor={MAIN_COLOR}
         content="Pension Chevaux et/ou Poneys /br (cliquer pour voir le détail)"
+        clickable={true}
       />
-      {/* <Bubble
-        bgColor={MAIN_COLOR}
-        textColor={BG_COLOR}
+      <Bubble
+        bgColor={BG_COLOR}
+        textColor={MAIN_COLOR}
         content="Pension Chevaux à partir de 300€ TTC"
       />
       <Bubble
-        bgColor={MAIN_COLOR}
-        textColor={BG_COLOR}
+        bgColor={BG_COLOR}
+        textColor={MAIN_COLOR}
         content="Pension Chevaux à partir de 300€ TTC"
       />
       <Bubble
-        bgColor={MAIN_COLOR}
-        textColor={BG_COLOR}
+        bgColor={BG_COLOR}
+        textColor={MAIN_COLOR}
         content="Pension Chevaux à partir de 300€ TTC"
       />
-      <Bubble
-        bgColor={MAIN_COLOR}
-        textColor={BG_COLOR}
-        content="Pension Chevaux à partir de 300€ TTC"
-      /> */}
     </div>
   );
 };

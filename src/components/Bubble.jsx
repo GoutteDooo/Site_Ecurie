@@ -14,14 +14,43 @@ const Bubble = ({
   textColor = "black",
   opacity = 1,
   content = null,
+  clickable = false,
 }) => {
-  const style = {
-    backgroundColor: bgColor,
-    color: textColor,
-    opacity: opacity,
+  const [isHover, setIsHover] = React.useState(false);
+  const style = () => {
+    const defaultStyle = {
+      backgroundColor: bgColor,
+      color: textColor,
+      opacity: opacity,
+      border: `3px solid ${textColor}`,
+    };
+    if (clickable) {
+      if (isHover) {
+        return {
+          backgroundColor: textColor,
+          color: bgColor,
+          cursor: "pointer",
+          transform: "scale(1.05)",
+        };
+      } else {
+        return {
+          ...defaultStyle,
+          cursor: "pointer",
+        };
+      }
+    }
+    return {
+      ...defaultStyle,
+    };
   };
+
   return (
-    <div className="bubble" style={style}>
+    <div
+      className={` bubble ${clickable ? "clickable" : ""}`}
+      style={style()}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+    >
       {breakLines(content)}
     </div>
   );

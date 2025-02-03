@@ -1,14 +1,16 @@
 .bubble {
-  background: red;
   width: 80%;
   height: 90px;
   @include verticalCenter;
   flex-direction: column;
   border-radius: 30px;
-  margin: 1rem auto;
+  margin: 0.7rem auto;
   padding: 1rem;
+  &.clickable {
+    transition: 0.5s;
+  }
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
   }
