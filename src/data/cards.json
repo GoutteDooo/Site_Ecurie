@@ -42,7 +42,17 @@
     {
       "id": 5,
       "path": "/assets/images/installations/",
-      "carousel": 1
+      "carousel": 9
+    },
+    {
+      "id": 6,
+      "path": "/assets/images/installations/",
+      "carousel": 4
+    },
+    {
+      "id": 7,
+      "path": "/assets/images/installations/",
+      "carousel": 4
     }
   ]
 }

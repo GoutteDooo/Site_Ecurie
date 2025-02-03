@@ -9,19 +9,11 @@ import Carousel from "../Carousel";
  * @param {JSX} title titre de l'image
  * @returns
  */
-const ImageCard = ({
-  imgLink = "test.jpg",
-  title = "installation",
-  id = 0,
-  card,
-}) => {
-  const image = {
-    backgroundImage: `url(/assets/images/installations/${imgLink})`,
-  };
+const ImageCard = ({ title = "installation", id = 0, card }) => {
   return (
     <div className="installations--image-card">
-      <div className="installations--image-card__image" style={image}>
-        <Carousel />
+      <div className="installations--image-card__image">
+        <Carousel card={card} />
       </div>
       {title}
       <ScrollArrow size={50} scrolling={id + 2} />

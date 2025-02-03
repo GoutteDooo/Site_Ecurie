@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 /**
- *
- * @param {JSON} card données contenues dans /src/data/cards.json
+ * Affiche le Carousel avec la carte passée en paramètre
+ * @param {JSON} card (NECESSAIRE) données contenues dans /src/data/cards.json
  * @param {boolean} compteur affiche le compteur de l'image
  * @param {number} compteurSize Définit la taille du compteur
  * @returns
