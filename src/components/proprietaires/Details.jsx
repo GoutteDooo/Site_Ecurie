@@ -15,9 +15,9 @@ const Details = () => {
     <p style={{ fontSize: "0.9rem" }}>
       Aide à la prise de médicaments & compléments alimentaires
     </p>,
-    <em style={{ fontSize: "1rem" }}>Autres formules sous devis</em>,
+    <b style={{ fontSize: "1rem" }}>Autres formules sous devis</b>,
     <>
-      <b style={{ textDecoration: "underline" }}>Tarif Pension :</b>
+      <b style={{ textDecoration: "underline" }}>Tarifs Pension :</b>
       <p>290€/mois Cheval</p>
       <p>260€/mois Poneys</p>
     </>,
