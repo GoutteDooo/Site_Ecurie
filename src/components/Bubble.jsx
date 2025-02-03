@@ -6,7 +6,7 @@ import { breakLines } from "../utils/functions/breakLines";
  * @param {string} bgColor couleur de fond de la bulle
  * @param {string} textColor couleur du texte de la bulle
  * @param {number} opacity opacité de la bulle (default = 1
- * @param {string} content contenu de la bulle
+ * @param {string} content contenu de la bulle (ASTUCE : utiliser "/br" pour passage à la ligne)
  * @returns
  */
 const Bubble = ({
@@ -31,6 +31,7 @@ const Bubble = ({
           color: bgColor,
           cursor: "pointer",
           transform: "scale(1.05)",
+          border: `3px solid ${textColor}`,
         };
       } else {
         return {
@@ -43,7 +44,6 @@ const Bubble = ({
       ...defaultStyle,
     };
   };
-
   return (
     <div
       className={` bubble ${clickable ? "clickable" : ""}`}
@@ -51,7 +51,7 @@ const Bubble = ({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      {breakLines(content)}
+      {content}
     </div>
   );
 };

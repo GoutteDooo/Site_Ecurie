@@ -3,6 +3,7 @@
   &__prestations {
     @include verticalCenter;
     flex-direction: column;
+    height: $vh;
     h1 {
       position: relative;
       display: inline-block;

@@ -7,11 +7,16 @@
   margin: 0.7rem auto;
   padding: 1rem;
   &.clickable {
-    transition: 0.5s;
+    transition: 0.4s;
   }
   p {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
+  }
+  em {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
   }
 }
