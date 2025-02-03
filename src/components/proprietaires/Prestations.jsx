@@ -3,6 +3,8 @@ import Bubble from "../Bubble";
 import { MAIN_COLOR, BG_COLOR } from "../../utils/variables";
 
 const Prestations = () => {
+  window.scrollTo(0, 0);
+
   return (
     <div className="proprietaires__prestations">
       <h1>Nos Prestations</h1>

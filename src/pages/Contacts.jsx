@@ -30,6 +30,7 @@ const icons = {
 };
 
 const Contacts = () => {
+  window.scrollTo(0, 0);
   return (
     <div className="contacts">
       <h1>Contactez-nous</h1>
