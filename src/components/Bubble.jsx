@@ -16,6 +16,7 @@ const Bubble = ({
   bgColor = MAIN_COLOR,
   textColor = "black",
   opacity = 1,
+  size = 90,
   content = null,
   clickable = false,
   linking = null,
@@ -28,6 +29,7 @@ const Bubble = ({
       color: textColor,
       opacity: opacity,
       border: `3px solid ${textColor}`,
+      height: `${size}px`,
     };
     if (clickable) {
       if (isHover) {
@@ -51,7 +53,7 @@ const Bubble = ({
   };
 
   const handleLink = () => {
-    return linking === "scroll" ? scrollEvent(2) : navigate(linking);
+    return linking === "scroll" ? scrollEvent(2.37) : navigate(linking);
   };
 
   return (

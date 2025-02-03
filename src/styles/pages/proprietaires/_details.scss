@@ -1,4 +1,18 @@
 .proprietaires__details {
   background: $main-color;
   height: $vh;
+  position: relative;
+  h1 {
+    color: $bg-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    @include underline($bg-color);
+    &:after {
+      width: 300px;
+    }
+  }
 }

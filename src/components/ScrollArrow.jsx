@@ -4,7 +4,7 @@ import scrollEvent from "../utils/functions/scrollEvent";
 /**
  * Arrow de scrolling en bas de certains composants pour aider
  * l'utilisateur a scroll plus facilement
- * @param {number} size définit la taille du composant
+ * @param {number} size définit la taille du composant en px
  * @param {number} scrolling définit une target : scrolling * 100vh
  * @returns
  */
