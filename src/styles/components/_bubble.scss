@@ -1,5 +1,5 @@
 .bubble {
-  width: 80%;
+  width: min(80%, 350px);
   height: 90px;
   @include verticalCenter;
   flex-direction: column;

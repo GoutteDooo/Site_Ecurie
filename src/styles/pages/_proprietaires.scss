@@ -1,5 +1,6 @@
 .proprietaires {
   width: 100%;
+  height: 300vh;
   &__prestations {
     @include verticalCenter;
     flex-direction: column;
@@ -17,6 +18,7 @@
         width: 120%;
         transform: translateX(-50%);
         left: 50%;
+        bottom: -0.8rem;
       }
     }
   }

@@ -14,10 +14,11 @@ const Prestations = () => {
       <p>Cours d'équitation & éthologie</p>
       <em>(cliquer pour aller sur la page)</em>
     </>,
-    <p>Sorties des chevaux</p>,
+    <p>Sorties de votre animal</p>,
     <p>Tonte</p>,
     <p>Solarium avec monnayeur</p>,
   ];
+  const linkings = ["scroll", "/cours"];
   return (
     <div className="proprietaires__prestations">
       <h1>Nos Prestations</h1>
@@ -28,6 +29,7 @@ const Prestations = () => {
           content={c}
           key={i}
           clickable={i < 2 ? true : false}
+          linking={i < 2 ? linkings[i] : null}
         />
       ))}
     </div>
