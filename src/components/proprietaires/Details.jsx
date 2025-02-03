@@ -23,7 +23,6 @@ const Details = () => {
     </>,
   ];
   const tarifPension = content.length - 1; //la où se situe le tarif pension pour le mapping
-  console.log(tarifPension);
 
   return (
     <div className="proprietaires__details">

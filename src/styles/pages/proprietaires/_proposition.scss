@@ -1,0 +1,22 @@
+.proprietaires__proposition {
+  @include verticalCenter;
+  flex-direction: column;
+  padding: 2rem;
+  p {
+    font-family: Crimson Text;
+    font-size: 1.2rem;
+    color: $secondary-color;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-top: 1rem;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    padding: 0.8rem 1.5rem;
+    &:hover {
+      background: $secondary-color;
+      color: $bg-color;
+    }
+  }
+}
