@@ -1,6 +1,9 @@
 .installations--description-card {
   height: $vh;
   position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 5px solid $main-color;
   &__carousel {
     background-size: cover;
     background-repeat: no-repeat;

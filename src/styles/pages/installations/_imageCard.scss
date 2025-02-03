@@ -14,11 +14,17 @@
   }
   h1 {
     @include verticalCenter;
+    flex-direction: column;
     height: 30%;
     padding: 1.5rem;
     text-align: center;
-    color: $main-color;
+    color: $secondary-color;
     font-weight: bold;
     background: $bg-color;
+    em {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: $main-color;
+    }
   }
 }

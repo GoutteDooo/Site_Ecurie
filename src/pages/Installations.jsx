@@ -10,7 +10,7 @@ const Installations = () => {
   // window.scrollTo(0, 0);
   const titles = [
     <h1>
-      Une carrière de <br /> 55m x 30m
+      Une carrière de <br /> 55m x 30m <br /> <em>Filtrage Concept Sol</em>
     </h1>,
     <h1>Un manège de 25m x 15m</h1>,
     <h1>
