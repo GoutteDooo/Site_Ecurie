@@ -12,7 +12,7 @@ import Carousel from "../Carousel";
 const ImageCard = ({ title = "installation", id = 0, card }) => {
   return (
     <div className="installations--image-card">
-      <div className="installations--image-card__image">
+      <div className="installations--image-card__carousel">
         <Carousel card={card} />
       </div>
       {title}

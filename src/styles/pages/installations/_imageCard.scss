@@ -4,13 +4,13 @@
   overflow: hidden;
   position: relative;
   border: 5px solid $main-color;
-  &__image {
+  &__carousel {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 70%;
-    filter: brightness(0.8) saturate(1.5);
+    filter: brightness(1) saturate(1.4);
   }
   h1 {
     @include verticalCenter;

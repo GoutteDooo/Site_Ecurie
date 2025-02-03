@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Carousel from "../Carousel";
 import ScrollArrow from "../ScrollArrow";
 
@@ -13,19 +12,6 @@ import ScrollArrow from "../ScrollArrow";
  * @returns
  */
 const Card = ({ card }) => {
-  const [slideX, setSlideX] = useState(0);
-  const handleSlide = (direction) => {
-    const newX = slideX + direction;
-    const indexes = card.carousel;
-    if (newX > 0) {
-      setSlideX(-(indexes - 1) * 100);
-    } else if (newX < -(indexes - 1) * 100) {
-      setSlideX(0);
-    } else {
-      setSlideX((prevState) => prevState + direction);
-    }
-  };
-
   return (
     <div className="main__card">
       <Carousel card={card} compteur={true} />

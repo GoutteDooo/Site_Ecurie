@@ -19,6 +19,9 @@ const Details = () => {
       <p>Curage des boxes</p>
       <p>tout les jeudis</p>
     </>,
+    <p>
+      <b>Option</b> Repas en + sous devis
+    </p>,
     <b style={{ fontSize: "1rem" }}>Autres formules sous devis</b>,
     <>
       <b style={{ textDecoration: "underline" }}>Tarifs Pension :</b>

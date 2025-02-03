@@ -53,6 +53,16 @@
       "id": 7,
       "path": "/assets/images/installations/",
       "carousel": 4
+    },
+    {
+      "id": 8,
+      "path": "/assets/images/installations/",
+      "carousel": 5
+    },
+    {
+      "id": 9,
+      "path": "/assets/images/installations/",
+      "carousel": 5
     }
   ]
 }

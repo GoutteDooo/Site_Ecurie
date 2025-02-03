@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "../Carousel";
+import ScrollArrow from "../ScrollArrow";
 
 /**
  * Affiche une image a 50% de l'écran
@@ -8,8 +10,19 @@ import React from "react";
  * @param {JSX} description description de l'image
  * @returns
  */
-const DescriptionCard = ({ imgLink, title, description }) => {
-  return <div className="installations--description-card"></div>;
+const DescriptionCard = ({ title, description, id, card }) => {
+  return (
+    <div className="installations--description-card">
+      <div className="installations--description-card__carousel">
+        <Carousel card={card} />
+      </div>
+      <div className="installations--description-card__description">
+        {title}
+        {description}
+      </div>
+      <ScrollArrow size={50} scrolling={id + 2} />
+    </div>
+  );
 };
 
 export default DescriptionCard;
