@@ -1,5 +1,6 @@
 import React from "react";
 import { MAIN_COLOR } from "../utils/variables";
+import { breakLines } from "../utils/functions/breakLines";
 /**
  * Affiche une bulle centrée verticalement
  * @param {string} bgColor couleur de fond de la bulle
@@ -21,7 +22,7 @@ const Bubble = ({
   };
   return (
     <div className="bubble" style={style}>
-      <p>{content}</p>
+      {breakLines(content)}
     </div>
   );
 };
