@@ -7,11 +7,11 @@ const Prestations = () => {
 
   const content = [
     <>
-      <p>Pension Chevaux et/ou Poneys</p>
+      <b>Pension Chevaux et/ou Poneys</b>
       <em>(cliquer pour voir le détail)</em>
     </>,
     <>
-      <p>Cours d'équitation & éthologie</p>
+      <b>Cours d'équitation & éthologie</b>
       <em>(cliquer pour aller sur la page)</em>
     </>,
     <p>Sorties de votre animal</p>,
