@@ -49,8 +49,18 @@ const Carousel = ({ card, compteur = true, compteurSize = 70 }) => {
 
   return (
     <div className="carousel--viewport">
-      <div className="carousel--arrow" onClick={() => handleSlide(100)}></div>
-      <div className="carousel--arrow" onClick={() => handleSlide(-100)}></div>
+      {compteur && (
+        <>
+          <div
+            className="carousel--arrow"
+            onClick={() => handleSlide(100)}
+          ></div>
+          <div
+            className="carousel--arrow"
+            onClick={() => handleSlide(-100)}
+          ></div>
+        </>
+      )}
       <div
         className="carousel--slides"
         style={{

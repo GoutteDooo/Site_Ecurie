@@ -34,6 +34,14 @@ const Installations = () => {
         <li>12 m²</li>
       </ul>
     </>,
+    <>
+      <h1>Casiers Individuels</h1>
+      <ul>
+        <li>Vue panoramique sur la carrière</li>
+        <li>Fenêtres Verre Securit ouvrables</li>
+        <li>12 m²</li>
+      </ul>
+    </>,
   ];
   return (
     <div className="installations">
@@ -43,6 +51,7 @@ const Installations = () => {
       <ImageCard title={titles[2]} id={2} card={cards[6]} />
       <DescriptionCard description={descriptions[0]} id={3} card={cards[7]} />
       <DescriptionCard description={descriptions[1]} id={4} card={cards[8]} />
+      <DescriptionCard description={descriptions[2]} id={5} card={cards[9]} />
       <Interested />
     </div>
   );
