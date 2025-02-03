@@ -5,7 +5,7 @@ import { MAIN_COLOR, BG_COLOR } from "../../utils/variables";
 const Prestations = () => {
   const content = [
     <>
-      <b>Pension Chevaux et/ou Poneys</b>
+      <b>Pension Chevaux et Poneys</b>
       <em>(cliquer pour voir le détail)</em>
     </>,
     <>

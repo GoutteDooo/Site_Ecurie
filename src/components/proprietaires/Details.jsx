@@ -19,7 +19,7 @@ const Details = () => {
     <>
       <b style={{ textDecoration: "underline" }}>Tarifs Pension :</b>
       <p>290€/mois Cheval</p>
-      <p>260€/mois Poneys</p>
+      <p>260€/mois Poney</p>
     </>,
   ];
   const tarifPension = content.length - 1; //la où se situe le tarif pension pour le mapping

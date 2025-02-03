@@ -7,11 +7,17 @@ import React from "react";
  * @param {boolean} isParallax parallax ou non (default: true)
  * @returns
  */
-const DecorImage = ({ imgLink, size = "250px", isParallax = true }) => {
+const DecorImage = ({
+  imgLink = "/assets/images/logo.jpg",
+  size = "250px",
+  isParallax = true,
+  imgPos = "center",
+}) => {
   const style = {
-    backgroundImage: `url(${imgLink})`,
+    backgroundImage: `url(/assets/images/decor_image/${imgLink})`,
     height: size,
     backgroundAttachment: isParallax ? "fixed" : "local",
+    backgroundPosition: imgPos,
   };
   return <div className="decor-image" style={style}></div>;
 };

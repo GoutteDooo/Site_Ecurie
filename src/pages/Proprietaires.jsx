@@ -13,9 +13,10 @@ const Proprietaires = () => {
     <div className="proprietaires">
       <IntroAnnexe annexe={annexes[0]} />
       <Prestations />
-      <DecorImage imgLink={"/assets/images/decor_image/proprio_1.jpg"} />
+      <DecorImage imgLink={"proprio_1.jpg"} />
       <Details />
       <Proposition />
+      <DecorImage imgLink={"/proprio_2.jpg"} size={"300px"} />
       <Interested />
     </div>
   );
