@@ -25,7 +25,7 @@ const IntroAnnexe = ({ annexe }) => {
     const values = {
       0: { fontSize: "1rem", lineHeight: "2.1rem" },
       30: { fontSize: "0.9rem", lineHeight: "1.9rem" },
-      55: { fontSize: "0.75rem", lineHeight: "1.4rem" },
+      55: { fontSize: "0.8rem", lineHeight: "1.5rem" },
       70: { fontSize: "0.6rem", lineHeight: "1.2rem" },
     };
     let rem = null;

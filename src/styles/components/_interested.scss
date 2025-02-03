@@ -10,6 +10,9 @@
       text-decoration: underline;
       color: $secondary-color;
       font-weight: bold;
+      &:hover {
+        filter: brightness(1.5);
+      }
     }
   }
 }

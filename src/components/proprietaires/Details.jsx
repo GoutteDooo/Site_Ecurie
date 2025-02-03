@@ -15,7 +15,10 @@ const Details = () => {
     <p style={{ fontSize: "0.9rem" }}>
       Aide à la prise de médicaments & compléments alimentaires
     </p>,
-    <p>Curage des boxes tout les jeudis</p>,
+    <>
+      <p>Curage des boxes</p>
+      <p>tout les jeudis</p>
+    </>,
     <b style={{ fontSize: "1rem" }}>Autres formules sous devis</b>,
     <>
       <b style={{ textDecoration: "underline" }}>Tarifs Pension :</b>

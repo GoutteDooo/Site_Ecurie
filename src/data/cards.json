@@ -38,6 +38,11 @@
       "id": 4,
       "path": "/assets/images/stable_life/",
       "carousel": 87
+    },
+    {
+      "id": 5,
+      "path": "/assets/images/installations/",
+      "carousel": 1
     }
   ]
 }

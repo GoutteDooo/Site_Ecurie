@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-const Carousel = ({ card, compteur = false, compteurSize = 70 }) => {
+/**
+ *
+ * @param {JSON} card données contenues dans /src/data/cards.json
+ * @param {boolean} compteur affiche le compteur de l'image
+ * @param {number} compteurSize Définit la taille du compteur
+ * @returns
+ */
+const Carousel = ({ card, compteur = true, compteurSize = 70 }) => {
   const [slideX, setSlideX] = useState(-100);
   const [carouselEnding, setCarouselEnding] = useState(false);
   const numberImages = card.carousel + 2;

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Carousel from "./Carousel";
+import Carousel from "../Carousel";
 import ScrollArrow from "../ScrollArrow";
 
 /**
