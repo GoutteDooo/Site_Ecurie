@@ -42,9 +42,10 @@ const Presentation = () => {
         pour répondre aux besoins de chaque propriétaire.
       </p>
       <p>
-        De plus, avec des propriétaires résidant sur place, nos écuries assurent
-        une présence permanente et une vigilance constante pour répondre à vos
-        attentes en matière de sécurité.
+        Les Ecuries sont gérées par les propriétaires résidant sur place.
+        Amélie, monitrice diplômée et Romuald assurent une présence continue
+        pour veiller sur vos chevaux et vous accompagner dans votre pratique
+        équestre.
       </p>
       <p>
         Rejoignez-nous et partagez votre passion dans une ambiance à la fois

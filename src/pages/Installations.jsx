@@ -39,12 +39,12 @@ const Installations = () => {
   return (
     <div className="installations">
       <IntroAnnexe annexe={annexes[1]} />
-      <ImageCard title={imageCardDesc[0]} id={0} card={cards[4]} />
-      <ImageCard title={imageCardDesc[1]} id={1} card={cards[5]} />
-      <ImageCard title={imageCardDesc[2]} id={2} card={cards[6]} />
-      <ImageCard title={imageCardDesc[3]} id={5} card={cards[9]} />
+      <ImageCard description={imageCardDesc[0]} id={0} card={cards[4]} />
+      <ImageCard description={imageCardDesc[1]} id={1} card={cards[5]} />
+      <ImageCard description={imageCardDesc[2]} id={2} card={cards[6]} />
       <DescriptionCard description={descCardDesc[0]} id={3} card={cards[7]} />
       <DescriptionCard description={descCardDesc[1]} id={4} card={cards[8]} />
+      <ImageCard description={imageCardDesc[3]} id={5} card={cards[9]} />
       <Interested />
     </div>
   );

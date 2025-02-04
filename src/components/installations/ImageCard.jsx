@@ -9,13 +9,13 @@ import Carousel from "../Carousel";
  * @param {JSX} title titre de l'image
  * @returns
  */
-const ImageCard = ({ title = "installation", id = 0, card }) => {
+const ImageCard = ({ description = "installation", id = 0, card }) => {
   return (
     <div className="installations--image-card">
       <div className="installations--image-card__carousel">
         <Carousel card={card} />
       </div>
-      {title}
+      {description}
       <ScrollArrow size={50} scrolling={id + 2} />
     </div>
   );
