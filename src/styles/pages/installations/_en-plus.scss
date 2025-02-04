@@ -1,0 +1,26 @@
+.installations__en-plus {
+  background: $bg-color;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $main-color;
+    letter-spacing: normal;
+    margin-bottom: 1rem;
+    text-align: center;
+    @include underline($main-color);
+    &:after {
+      width: 300px;
+      bottom: -0.8rem;
+    }
+  }
+  ul {
+    padding-top: 1rem;
+    li {
+      list-style-type: disc;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+}

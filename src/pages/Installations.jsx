@@ -5,6 +5,7 @@ import ImageCard from "../components/installations/ImageCard";
 import DescriptionCard from "../components/installations/DescriptionCard";
 import { annexes } from "../data/annexes.json";
 import { cards } from "../data/cards.json";
+import EnPlus from "../components/installations/EnPlus";
 
 const Installations = () => {
   // window.scrollTo(0, 0);
@@ -121,6 +122,7 @@ const Installations = () => {
         card={cards[10]}
       />
       <ImageCard description={descriptions["Douche"]} id={7} card={cards[11]} />
+      <EnPlus />
       <Interested />
     </div>
   );
