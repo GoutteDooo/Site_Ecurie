@@ -17,6 +17,7 @@ const Bubble = ({
   textColor = "black",
   opacity = 1,
   size = 90,
+  borderColor = `3px solid ${textColor}`,
   content = null,
   clickable = false,
   linking = null,
@@ -28,7 +29,7 @@ const Bubble = ({
       backgroundColor: bgColor,
       color: textColor,
       opacity: opacity,
-      border: `3px solid ${textColor}`,
+      border: borderColor,
       height: `${size}px`,
     };
     if (clickable) {
@@ -38,7 +39,7 @@ const Bubble = ({
           color: bgColor,
           cursor: "pointer",
           transform: "scale(1.05)",
-          border: `3px solid ${textColor}`,
+          border: borderColor,
         };
       } else {
         return {

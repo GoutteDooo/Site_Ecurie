@@ -1,0 +1,29 @@
+.cours__tarifs {
+  width: 100%;
+  height: $vh;
+  position: relative;
+  padding-bottom: 2rem;
+  &--bg {
+    position: absolute;
+    background-image: url("/assets/images/cours.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.75) saturate(1.5);
+  }
+  h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.3rem 1.3rem 1rem;
+    margin-bottom: 1.5rem;
+    @include underline(white);
+    &:after {
+      width: 300px;
+    }
+  }
+}
