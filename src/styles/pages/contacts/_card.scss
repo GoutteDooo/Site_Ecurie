@@ -13,6 +13,11 @@
       transition: all 0.1s ease-in-out;
       animation: card-hover 0.5s ease-in-out forwards;
     }
+    .contacts__card--link {
+      transition: all 0.1s ease-in-out;
+      color: $main-color;
+      transform: scale(1.02);
+    }
   }
   &--icon {
     align-content: center;
@@ -31,6 +36,9 @@
       color: black;
       font-weight: bold;
       line-height: 1.2rem;
+      &:hover {
+        color: $secondary-color;
+      }
       em {
         font-style: italic;
         font-weight: normal;
