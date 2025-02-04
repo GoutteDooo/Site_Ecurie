@@ -1,9 +1,9 @@
 import React from "react";
 import IntroAnnexe from "../components/IntroAnnexe";
 import Interested from "../components/Interested";
-import { annexes } from "../data/annexes.json";
 import ImageCard from "../components/installations/ImageCard";
 import DescriptionCard from "../components/installations/DescriptionCard";
+import { annexes } from "../data/annexes.json";
 import { cards } from "../data/cards.json";
 
 const Installations = () => {
@@ -32,17 +32,25 @@ const Installations = () => {
       </>
     ),
     paddocks: (
+      <>
+        <h1>
+          12 paddocks <br /> de + de 1000 m²
+          <em>Avec point d'eau</em>
+        </h1>
+      </>
+    ),
+    casiers: (
       <h1>
-        12 paddocks <br /> de + de 1000 m²
+        Casiers Individuels de 4m³ <em>Offert avec la pension</em>
       </h1>
     ),
-    casiers: <h1>Casiers Individuels de 4m3</h1>,
     boxesInt: (
       <>
         <h1>Boxes Intérieurs</h1>
         <ul>
           <li>Dans Hangar sécurisé</li>
           <li>Grand espace pour la tête</li>
+          <li>Abreuvoirs antigel</li>
           <li>12 m²</li>
         </ul>
       </>
@@ -53,7 +61,18 @@ const Installations = () => {
         <ul>
           <li>Vue panoramique sur la carrière</li>
           <li>Fenêtres Verre Securit ouvrables</li>
+          <li>Abreuvoirs antigel</li>
           <li>12 m²</li>
+        </ul>
+      </>
+    ),
+    Solarium: (
+      <>
+        <h1>Solarium</h1>
+        <ul>
+          <li>Accélération de la récupération après l'effort</li>
+          <li>Séchage rapide après le travail ou la pluie</li>
+          <li>Soutien dans la rééducation post-traumatique</li>
         </ul>
       </>
     ),
@@ -87,6 +106,11 @@ const Installations = () => {
         card={cards[8]}
       />
       <ImageCard description={descriptions["casiers"]} id={5} card={cards[9]} />
+      <DescriptionCard
+        description={descriptions["Solarium"]}
+        id={6}
+        card={cards[10]}
+      />
       <Interested />
     </div>
   );
