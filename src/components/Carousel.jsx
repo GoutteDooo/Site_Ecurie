@@ -7,7 +7,11 @@ import React, { useState } from "react";
  * @param {number} compteurSize Définit la taille du compteur
  * @returns
  */
-const Carousel = ({ card, compteur = true, compteurSize = 70 }) => {
+const Carousel = ({
+  card,
+  compteur = card.carousel > 1 ? true : false,
+  compteurSize = 70,
+}) => {
   const [slideX, setSlideX] = useState(-100);
   const [carouselEnding, setCarouselEnding] = useState(false);
   const numberImages = card.carousel + 2;

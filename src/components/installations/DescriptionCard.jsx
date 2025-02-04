@@ -14,7 +14,7 @@ const DescriptionCard = ({ description, id, card }) => {
   return (
     <div className="installations--description-card">
       <div className="installations--description-card__carousel">
-        <Carousel card={card} compteur={card.carousel > 1 ? true : false} />
+        <Carousel card={card} />
       </div>
       <div className="installations--description-card__description">
         {description}

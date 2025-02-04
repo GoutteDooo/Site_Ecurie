@@ -8,7 +8,7 @@ import { cards } from "../data/cards.json";
 
 const Installations = () => {
   // window.scrollTo(0, 0);
-  const titles = [
+  const imageCardDesc = [
     <h1>
       Une carrière de <br /> 55m x 30m <br /> <em>Filtrage Concept Sol</em>
     </h1>,
@@ -16,8 +16,9 @@ const Installations = () => {
     <h1>
       12 paddocks <br /> de + de 1000 m²
     </h1>,
+    <h1>Casiers Individuels de 4m3</h1>,
   ];
-  const descriptions = [
+  const descCardDesc = [
     <>
       <h1>Boxes Intérieurs</h1>
       <ul>
@@ -34,24 +35,16 @@ const Installations = () => {
         <li>12 m²</li>
       </ul>
     </>,
-    <>
-      <h1>Casiers Individuels</h1>
-      <ul>
-        <li>Vue panoramique sur la carrière</li>
-        <li>Fenêtres Verre Securit ouvrables</li>
-        <li>12 m²</li>
-      </ul>
-    </>,
   ];
   return (
     <div className="installations">
       <IntroAnnexe annexe={annexes[1]} />
-      <ImageCard title={titles[0]} id={0} card={cards[4]} />
-      <ImageCard title={titles[1]} id={1} card={cards[5]} />
-      <ImageCard title={titles[2]} id={2} card={cards[6]} />
-      <DescriptionCard description={descriptions[0]} id={3} card={cards[7]} />
-      <DescriptionCard description={descriptions[1]} id={4} card={cards[8]} />
-      <DescriptionCard description={descriptions[2]} id={5} card={cards[9]} />
+      <ImageCard title={imageCardDesc[0]} id={0} card={cards[4]} />
+      <ImageCard title={imageCardDesc[1]} id={1} card={cards[5]} />
+      <ImageCard title={imageCardDesc[2]} id={2} card={cards[6]} />
+      <ImageCard title={imageCardDesc[3]} id={5} card={cards[9]} />
+      <DescriptionCard description={descCardDesc[0]} id={3} card={cards[7]} />
+      <DescriptionCard description={descCardDesc[1]} id={4} card={cards[8]} />
       <Interested />
     </div>
   );
