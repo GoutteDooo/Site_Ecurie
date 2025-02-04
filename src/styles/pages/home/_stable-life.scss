@@ -1,10 +1,12 @@
 .stable-life {
   background: $main-color;
+  height: 600px;
   padding-bottom: 2rem;
   .stable-life--title {
     padding: 1rem;
     @include verticalCenter;
     background: $main-color;
+    height: 15%;
     h1 {
       font-size: 1.5rem;
       font-weight: 700;
@@ -27,5 +29,6 @@
     border-radius: 20px;
     margin: 0 0.5rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
+    height: 85%;
   }
 }
