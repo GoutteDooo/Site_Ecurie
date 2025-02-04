@@ -16,9 +16,7 @@ const Card = ({ icon, content, link = false }) => {
       ) : (
         <div className="contacts__card">
           <div className="contacts__card--icon">{icon}</div>
-          <div className="contacts__card--content">
-            <p>{content}</p>
-          </div>
+          <div className="contacts__card--content">{content}</div>
         </div>
       )}
     </>

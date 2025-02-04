@@ -31,6 +31,11 @@
       color: black;
       font-weight: bold;
       line-height: 1.2rem;
+      em {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 0.85rem;
+      }
       &.contacts__card--link {
         color: $secondary-color;
         font-weight: bold;
