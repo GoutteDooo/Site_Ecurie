@@ -73,6 +73,11 @@
       "id": 11,
       "path": "/assets/images/installations/",
       "carousel": 1
+    },
+    {
+      "id": 12,
+      "path": "/assets/images/installations/",
+      "carousel": 1
     }
   ]
 }

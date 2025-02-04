@@ -76,6 +76,15 @@ const Installations = () => {
         </ul>
       </>
     ),
+    Douche: (
+      <h1>
+        Espace Douche{" "}
+        <em style={{ fontSize: "1rem", lineHeight: "1.5rem" }}>
+          Pour leur plus grand bonheur après une séance intense ou de fortes
+          chaleurs
+        </em>
+      </h1>
+    ),
   };
   return (
     <div className="installations">
@@ -111,6 +120,7 @@ const Installations = () => {
         id={6}
         card={cards[10]}
       />
+      <ImageCard description={descriptions["Douche"]} id={7} card={cards[11]} />
       <Interested />
     </div>
   );
