@@ -25,6 +25,10 @@
       font-weight: bold;
       margin-bottom: 2rem;
       font-size: 1.8rem;
+      @include underline($main-color);
+      &:after {
+        width: 300px;
+      }
     }
     ul {
       @include verticalCenter;

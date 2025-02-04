@@ -10,7 +10,6 @@
     color: $main-color;
     letter-spacing: normal;
     margin: 2rem 0 1.5rem;
-    position: relative;
     @include underline($main-color);
   }
   &__cards {
