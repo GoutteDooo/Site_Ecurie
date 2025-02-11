@@ -45,6 +45,7 @@ const Bubble = ({
         return {
           ...defaultStyle,
           cursor: "pointer",
+          border: `4px solid ${textColor}`,
         };
       }
     }

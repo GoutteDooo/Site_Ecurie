@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer__copyright">
         © Copyright Les Ecuries de la Selle
       </div>
-      <Link to="/contact">
+      <Link to="/contacts">
         <div className="footer__contacts">Contactez-nous</div>
       </Link>
     </div>
