@@ -3,7 +3,6 @@ import ScrollArrow from "../ScrollArrow";
 
 const Presentation = () => {
   const [windowSize, setWindowSize] = React.useState(window.innerHeight);
-  console.log(windowSize);
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowSize(window.innerHeight);
