@@ -32,7 +32,7 @@ const Details = () => {
   const tarifPension = content.length - 1; //la où se situe le tarif pension pour le mapping
 
   return (
-    <div className="proprietaires__details">
+    <div className="proprietaires__details" id="details">
       <h1>Les Détails d'une pension aux Écuries de la Selle :</h1>
       <div className="proprietaires__details--bubbles">
         {content.map((c, i) => (

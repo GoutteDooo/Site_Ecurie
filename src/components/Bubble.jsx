@@ -1,17 +1,15 @@
 import React from "react";
 import { MAIN_COLOR } from "../utils/variables";
-import { useNavigate } from "react-router-dom";
-import scrollEvent from "../utils/functions/scrollEvent";
+import { Link, useNavigate } from "react-router-dom";
 
 /**
  * Affiche une bulle centrée verticalement
  * @param {string} bgColor couleur de fond de la bulle
  * @param {string} textColor couleur du texte de la bulle
- * @param {number} opacity opacité de la bulle (default = 1
+ * @param {number} opacity opacité de la bulle (default = 1)
  * @param {string} content contenu de la bulle (ASTUCE : utiliser "/br" pour passage à la ligne)
  * @returns
  */
-
 const Bubble = ({
   bgColor = MAIN_COLOR,
   textColor = "black",
@@ -24,6 +22,7 @@ const Bubble = ({
 }) => {
   const [isHover, setIsHover] = React.useState(false);
   let navigate = useNavigate();
+
   const style = () => {
     const defaultStyle = {
       backgroundColor: bgColor,
@@ -55,18 +54,31 @@ const Bubble = ({
   };
 
   const handleLink = () => {
-    return linking === "scroll" ? scrollEvent(2.37) : navigate(linking);
+    if (linking === "scroll") {
+      const detailsElement = document.getElementById("details");
+      if (detailsElement) {
+        const offset = 70; // Hauteur de la navbar
+        const elementPosition =
+          detailsElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      navigate(linking);
+    }
   };
 
   return (
     <div
-      className={` bubble ${clickable ? "clickable" : ""}`}
+      className={`bubble ${clickable ? "clickable" : ""}`}
       style={style()}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       onClick={linking ? handleLink : null}
     >
-      {content}
+      <span>{content}</span>
     </div>
   );
 };
