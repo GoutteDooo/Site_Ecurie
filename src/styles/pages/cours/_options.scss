@@ -1,0 +1,17 @@
+.cours__options {
+  background: $main-color;
+  padding: 2rem 0;
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: $bg-color;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    @include underline($bg-color);
+    &:after {
+      width: min(80%, 390px);
+      bottom: -0.7rem;
+    }
+  }
+}
