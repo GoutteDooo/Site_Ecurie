@@ -45,7 +45,6 @@ const Details = () => {
           />
         ))}
       </div>
-      <ScrollArrow size={60} scrolling={3.37} />
     </div>
   );
 };

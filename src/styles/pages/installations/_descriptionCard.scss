@@ -1,4 +1,6 @@
 .installations--description-card {
+  width: min(100%, 600px);
+  margin: auto;
   height: $vh;
   position: relative;
   border-radius: 15px;
