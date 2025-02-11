@@ -14,6 +14,7 @@ const Carousel = ({
 }) => {
   const [slideX, setSlideX] = useState(-100);
   const [carouselEnding, setCarouselEnding] = useState(false);
+  const [activeFilterButton, setActiveFilterButton] = useState(false);
   const numberImages = card.carousel + 2;
   const handleSlide = (direction) => {
     const newX = slideX + direction;
@@ -35,6 +36,11 @@ const Carousel = ({
     } else {
       setSlideX((prevState) => prevState + direction);
     }
+    //Bouton "DECOUVRIR TOUTES NOS INSTALLATIONS"
+    const actualIndex = -newX / 100;
+    isFilter(actualIndex)
+      ? setActiveFilterButton(true)
+      : setActiveFilterButton(false);
   };
 
   const isFilter = (index) =>
@@ -56,10 +62,12 @@ const Carousel = ({
       {compteur && (
         <>
           <div
+            style={activeFilterButton ? { width: "20vw" } : null}
             className="carousel--arrow"
             onClick={() => handleSlide(100)}
           ></div>
           <div
+            style={activeFilterButton ? { width: "20vw" } : null}
             className="carousel--arrow"
             onClick={() => handleSlide(-100)}
           ></div>
