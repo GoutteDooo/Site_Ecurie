@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 /**
  * Affiche le Carousel avec la carte passée en paramètre
@@ -98,7 +99,9 @@ const Carousel = ({
             key={index}
           >
             {isFilter(index) && (
-              <button>DÉCOUVRIR TOUTES NOS INSTALLATIONS</button>
+              <Link to="/installations">
+                <button>DÉCOUVRIR TOUTES NOS INSTALLATIONS</button>
+              </Link>
             )}
           </div>
         ))}

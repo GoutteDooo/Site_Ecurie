@@ -63,7 +63,7 @@
         pointer-events: auto;
         font-size: 0.9rem;
         &:hover {
-          background: none;
+          background: rgba(245, 245, 245, 0.72);
           color: $third-color;
           border-color: $third-color;
         }
