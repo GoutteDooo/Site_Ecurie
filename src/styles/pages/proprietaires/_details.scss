@@ -13,11 +13,31 @@
     @include underline($bg-color);
     &:after {
       width: 300px;
+      @include tablet {
+        width: 450px;
+      }
+      @include laptop {
+        width: 650px;
+      }
+      @include desktop {
+        width: 1100px;
+      }
     }
   }
   &--bubbles {
     width: 100%;
     @include verticalCenter;
     flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-content: center;
+      margin: 1rem auto 0;
+      width: 1100px;
+    }
+  }
+  @include desktop {
+    min-height: auto;
   }
 }
