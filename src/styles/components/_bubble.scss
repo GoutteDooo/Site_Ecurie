@@ -4,17 +4,18 @@
   @include verticalCenter;
   flex-direction: column;
   border-radius: 30px;
-  margin: 0.7rem auto;
+  margin: 0.7rem 0;
   padding: 0.5rem 1rem;
   &.clickable {
     transition: 0.4s;
   }
-  p {
+  span {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     text-align: center;
   }
   b {
+    display: block;
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -24,5 +25,7 @@
     font-style: italic;
     font-size: 0.8rem;
     margin-top: 0.1rem;
+    text-align: center;
+    width: 100%;
   }
 }

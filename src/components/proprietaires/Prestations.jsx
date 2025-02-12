@@ -20,16 +20,18 @@ const Prestations = () => {
   return (
     <div className="proprietaires__prestations">
       <h1>Nos Prestations</h1>
-      {content.map((c, i) => (
-        <Bubble
-          bgColor={BG_COLOR}
-          textColor={MAIN_COLOR}
-          content={c}
-          key={i}
-          clickable={i < 2 ? true : false}
-          linking={i < 2 ? linkings[i] : null}
-        />
-      ))}
+      <div className="proprietaires__prestations--bubbles">
+        {content.map((c, i) => (
+          <Bubble
+            bgColor={BG_COLOR}
+            textColor={MAIN_COLOR}
+            content={c}
+            key={i}
+            clickable={i < 2 ? true : false}
+            linking={i < 2 ? linkings[i] : null}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -15,4 +15,9 @@
       width: 300px;
     }
   }
+  &--bubbles {
+    width: 100%;
+    @include verticalCenter;
+    flex-direction: column;
+  }
 }
