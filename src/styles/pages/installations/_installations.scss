@@ -1,3 +1,10 @@
 .installations {
-  // background: $main-color;
+  #installations {
+    .intro-annexe {
+      &__description {
+        p {
+        }
+      }
+    }
+  }
 }

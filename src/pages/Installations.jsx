@@ -5,7 +5,7 @@ import ImageCard from "../components/installations/ImageCard";
 import DescriptionCard from "../components/installations/DescriptionCard";
 import EnPlus from "../components/installations/EnPlus";
 //datas
-import { annexes } from "../data/annexes.json";
+import { annexes } from "../data/annexes.jsx";
 import { cards } from "../data/cards.json";
 import { descriptions } from "../data/Installations_data";
 
