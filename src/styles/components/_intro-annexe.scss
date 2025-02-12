@@ -46,6 +46,8 @@
     padding: 0 2.8rem;
     @include verticalCenter;
     p {
+      line-height: 1.2rem;
+      font-size: 0.85rem;
       b {
         font-weight: 700;
       }

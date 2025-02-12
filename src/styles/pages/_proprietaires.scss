@@ -20,4 +20,46 @@
       }
     }
   }
+  .intro-annexe {
+    &__description {
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+      @include tablet {
+        p {
+          font-size: 1.1rem;
+          line-height: 2.2rem;
+        }
+      }
+      @include laptop {
+        padding: 4rem;
+        p {
+          line-height: 2.6rem;
+        }
+      }
+      @include desktop {
+        padding: 6rem;
+        p {
+          line-height: 3rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    @include tablet {
+      &__bg-media {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    @include laptop {
+      &__bg-media {
+        h1 {
+          width: 100%;
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
 }
