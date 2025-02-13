@@ -63,12 +63,12 @@ const Carousel = ({
       {compteur && (
         <>
           <div
-            style={activeFilterButton ? { width: "20vw" } : null}
+            style={activeFilterButton ? { width: "80px" } : null}
             className="carousel--arrow"
             onClick={() => handleSlide(100)}
           ></div>
           <div
-            style={activeFilterButton ? { width: "20vw" } : null}
+            style={activeFilterButton ? { width: "80px" } : null}
             className="carousel--arrow"
             onClick={() => handleSlide(-100)}
           ></div>
