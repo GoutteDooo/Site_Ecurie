@@ -10,7 +10,6 @@ import ScrollArrow from "../ScrollArrow";
  */
 const Tarifs = () => {
   const SECONDARY_COLOR_OPACITY = "#3f51b5cc";
-  console.log(window.innerWidth);
 
   return (
     <div className="cours__tarifs">

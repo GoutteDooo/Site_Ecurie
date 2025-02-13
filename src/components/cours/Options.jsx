@@ -14,16 +14,18 @@ const Options = () => {
   return (
     <div className="cours__options">
       <h1>Informations supplémentaires</h1>
-      {CONTENT_INFOS.map((c, i) => (
-        <Bubble
-          bgColor={BG_COLOR_OPACITY}
-          textColor={MAIN_COLOR}
-          content={c}
-          key={i}
-          size={70}
-          borderColor={MAIN_COLOR_OPACITY}
-        />
-      ))}
+      <div className="cours__options--content">
+        {CONTENT_INFOS.map((c, i) => (
+          <Bubble
+            bgColor={BG_COLOR_OPACITY}
+            textColor={MAIN_COLOR}
+            content={c}
+            key={i}
+            size={70}
+            borderColor={MAIN_COLOR_OPACITY}
+          />
+        ))}
+      </div>
     </div>
   );
 };

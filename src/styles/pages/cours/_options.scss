@@ -14,4 +14,18 @@
       bottom: -0.7rem;
     }
   }
+  &--content {
+    @include verticalCenter;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 80%;
+    @include desktop {
+      align-items: start;
+      flex-direction: row;
+      width: min(80%, 800px);
+      flex-wrap: wrap;
+      align-content: start;
+    }
+  }
 }
