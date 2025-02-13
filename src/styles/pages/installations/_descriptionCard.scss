@@ -60,6 +60,14 @@
       border-radius: 25px;
       overflow: hidden;
       .carousel--viewport {
+        .carousel--slides {
+          .carousel--item {
+            background-size: 80%;
+            background-position: 50% 30%;
+            background-repeat: no-repeat;
+            background-color: black;
+          }
+        }
       }
     }
     &__description {
@@ -72,6 +80,7 @@
       }
       ul {
         flex-direction: row;
+        gap: 2rem;
         li {
           list-style-type: none;
           font-style: italic;
