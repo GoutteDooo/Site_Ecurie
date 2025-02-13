@@ -1,4 +1,7 @@
 .navbar {
+  @include desktop {
+    display: none;
+  }
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -136,5 +139,46 @@
   }
   0% {
     transform: translateY(-14px) rotate(-45deg);
+  }
+}
+.navbar-desktop {
+  display: none;
+  @include desktop {
+    $navbar-height: 100px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: $navbar-height;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    overflow: hidden;
+    &--logo {
+      background-image: url("/assets/images/logo.jpg");
+      background-size: cover;
+      height: 120px;
+      width: 120px;
+    }
+    &--item {
+      text-align: center;
+      height: $navbar-height;
+      line-height: $navbar-height;
+      font-size: 1.2rem;
+      color: $text-color;
+      font-weight: normal;
+      padding: 0 1rem;
+      @include underline($main-color);
+      &.active {
+        color: $main-color;
+        font-weight: bold;
+      }
+      &:hover {
+        transition: all 0.1s ease-in-out;
+        color: $secondary-color;
+      }
+    }
   }
 }

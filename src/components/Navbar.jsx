@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import BurgerSlider from "../pages/BurgerSlider";
+import NavbarDesktop from "./NavbarDesktop";
 
 const Navbar = () => {
   const [active, setActive] = React.useState(false);
-
   const handleClick = () => {
     setActive(!active);
   };
@@ -22,6 +22,7 @@ const Navbar = () => {
         </div>
       </div>
       <BurgerSlider active={active} setActive={setActive} />
+      <NavbarDesktop />
       <Outlet />
     </>
   );
