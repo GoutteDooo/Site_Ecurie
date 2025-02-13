@@ -21,11 +21,9 @@
 /* LAYOUTS */
 @import "./layouts/footer";
 @import "./layouts/navbar";
-/* PAGES */
-@import "./pages/about";
-@import "./pages/contact";
-//Home
+/*** PAGES ***/
 @import "./pages/home";
+//Home
 @import "./pages/home/main";
 @import "./pages/home/presentation";
 @import "./pages/home/card";
@@ -35,6 +33,7 @@
 //Burger Slider
 @import "./pages/burger/burger-slider";
 //Contacts
+@import "./pages/contacts/contact";
 @import "./pages/contacts/card";
 @import "./pages/contacts/map";
 //Installations
@@ -43,7 +42,7 @@
 @import "./pages/installations/descriptionCard";
 @import "./pages/installations/en-plus";
 //Proprietaires
-@import "./pages/proprietaires";
+@import "./pages/proprietaires/proprietaires";
 @import "./pages/proprietaires/details";
 @import "./pages/proprietaires/proposition";
 //Cours
