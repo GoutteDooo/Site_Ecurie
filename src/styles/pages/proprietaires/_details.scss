@@ -1,9 +1,6 @@
 .proprietaires__details {
   background: $main-color;
   min-height: $vh-mobile;
-  @include desktop {
-    height: $vh-desktop;
-  }
   position: relative;
   padding-bottom: 2rem;
   h1 {
