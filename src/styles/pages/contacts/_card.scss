@@ -1,64 +1,108 @@
-.contacts__card {
-  height: 80px;
-  width: 100%;
+.contacts__cards {
   @include verticalCenter;
-  justify-content: start;
-  position: relative;
-  &:hover {
-    color: $secondary-color;
-    fill: $secondary-color;
-    // filter: hue-rotate(20deg);
-    transition: all 0.1s ease-in-out;
-    .contacts__card--icon {
-      transition: all 0.1s ease-in-out;
-      animation: card-hover 0.5s ease-in-out forwards;
-    }
-    .contacts__card--link {
-      transition: all 0.1s ease-in-out;
-      color: $main-color;
-      transform: scale(1.02);
-    }
-  }
-  &--icon {
-    align-content: center;
-    height: 100%;
-    min-width: 40px;
-    svg {
-      height: 30px;
-      width: 30px;
-      fill: $secondary-color;
-    }
-  }
-  &--content {
-    margin-left: 0.3rem;
-    p {
-      font-size: 0.9rem;
-      color: black;
-      font-weight: bold;
-      line-height: 1.2rem;
-      &:hover {
-        color: $secondary-color;
-      }
-      em {
-        font-style: italic;
-        font-weight: normal;
-        font-size: 0.85rem;
-      }
-      &.contacts__card--link {
-        color: $secondary-color;
-        font-weight: bold;
-        text-decoration: underline;
-      }
-    }
-  }
-  &:after {
-    content: "";
-    height: 2px;
+  flex-direction: column;
+  width: min(300px, 80%);
+  a {
     width: 100%;
-    border-top: 1px dashed $secondary-color;
-    position: absolute;
-    left: 0;
-    bottom: 0.4rem;
+  }
+  .contacts__card {
+    height: 80px;
+    width: 100%;
+    @include verticalCenter;
+    justify-content: start;
+    position: relative;
+    &:hover {
+      color: $secondary-color;
+      fill: $secondary-color;
+      // filter: hue-rotate(20deg);
+      transition: all 0.1s ease-in-out;
+      .contacts__card--icon {
+        transition: all 0.1s ease-in-out;
+        animation: card-hover 0.5s ease-in-out forwards;
+      }
+      .contacts__card--link {
+        transition: all 0.1s ease-in-out;
+        color: $main-color;
+        transform: scale(1.02);
+      }
+    }
+    &--icon {
+      align-content: center;
+      height: 100%;
+      min-width: 40px;
+      svg {
+        height: 30px;
+        width: 30px;
+        fill: $secondary-color;
+      }
+    }
+    &--content {
+      margin-left: 0.3rem;
+      p {
+        font-size: 0.9rem;
+        color: black;
+        font-weight: bold;
+        line-height: 1.2rem;
+        &:hover {
+          color: $secondary-color;
+        }
+        em {
+          font-style: italic;
+          font-weight: normal;
+          font-size: 0.85rem;
+        }
+        &.contacts__card--link {
+          color: $secondary-color;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      border-top: 1px dashed $secondary-color;
+      position: absolute;
+      left: 0;
+      bottom: 0.4rem;
+    }
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 1rem;
+    width: min(80%, 600px);
+    flex-wrap: wrap;
+    .contacts__card {
+      height: 250px;
+      width: 250px;
+      flex-direction: column;
+      border: 3px solid $secondary-color;
+      border-radius: 5px;
+      &:after {
+        width: 0;
+      }
+      &--icon {
+        height: 70%;
+        width: 100%;
+        text-align: center;
+        svg {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      &--content {
+        @include verticalCenter;
+        flex-direction: column;
+        p {
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+    }
+    a {
+      width: auto;
+    }
   }
 }
 
