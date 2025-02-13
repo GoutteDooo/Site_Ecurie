@@ -1,4 +1,7 @@
 .scroll-arrow {
+  @include desktop {
+    display: none;
+  }
   position: absolute;
   bottom: 0;
   left: 50%;
