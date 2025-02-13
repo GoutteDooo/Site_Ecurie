@@ -2,6 +2,7 @@
   .intro-annexe {
     &__bg-media {
       &--image {
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: 0 -50px;
         @include laptop {
@@ -10,6 +11,30 @@
         @include desktop {
           background-position: 0 -350px;
         }
+      }
+    }
+    &__description {
+      p {
+        font-size: 0.9rem;
+        line-height: 2rem;
+        @include tablet {
+          font-size: 1rem;
+          line-height: 2.6rem;
+        }
+        @include laptop {
+          max-width: 1200px;
+          line-height: 3.2rem;
+        }
+        @include desktop {
+          line-height: 3.5rem;
+          font-size: 1.15rem;
+        }
+      }
+      @include laptop {
+        padding: 0 5rem;
+      }
+      @include desktop {
+        padding: 0 6rem;
       }
     }
   }
