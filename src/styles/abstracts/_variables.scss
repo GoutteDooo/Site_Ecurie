@@ -15,7 +15,8 @@ $crimson: "Crimson Text", serif;
 $roboto: "Roboto", sans-serif;
 
 /* SIZES */
-$vh: calc(100vh - 140px);
+$vh-mobile: calc(100vh - 140px);
+$vh-desktop: calc(100vh - 170px);
 
 /* BREAKPOINTS */
 $breakpoint: (

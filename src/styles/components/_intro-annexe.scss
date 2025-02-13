@@ -1,12 +1,18 @@
 .intro-annexe {
-  height: $vh;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
   width: 100%;
   overflow: hidden;
   position: relative;
   &__bg-media {
     position: relative;
     width: 100%;
-    height: calc(0.5 * $vh);
+    height: calc(0.5 * $vh-mobile);
+    @include desktop {
+      height: calc(0.5 * $vh-desktop);
+    }
     h1 {
       position: absolute;
       top: 50%;
@@ -40,7 +46,10 @@
   }
   &__description {
     width: 100%;
-    height: calc((1 - 0.5) * $vh);
+    height: calc((1 - 0.5) * $vh-mobile);
+    @include desktop {
+      height: calc((1 - 0.5) * $vh-desktop);
+    }
     color: $bg-color;
     background: $main-color;
     padding: 0 2.8rem;

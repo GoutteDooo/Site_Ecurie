@@ -1,7 +1,10 @@
 .installations--image-card {
   width: min(100%, 1000px);
   margin: auto;
-  height: $vh;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
   border-radius: 15px;
   overflow: hidden;
   position: relative;

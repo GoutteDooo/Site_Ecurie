@@ -1,13 +1,22 @@
 .main {
   &__card {
     position: relative;
-    height: $vh;
+    height: $vh-mobile;
+    @include desktop {
+      height: $vh-desktop;
+    }
     width: 100%;
     .carousel--viewport {
-      height: calc(0.67 * $vh);
+      height: calc(0.67 * $vh-mobile);
+      @include desktop {
+        height: calc(0.67 * $vh-desktop);
+      }
     }
     &__content {
-      height: calc((1 - 0.67) * $vh);
+      height: calc((1 - 0.67) * $vh-mobile);
+      @include desktop {
+        height: calc((1 - 0.67) * $vh-desktop);
+      }
       @include verticalCenter;
       justify-content: start;
       flex-direction: column;

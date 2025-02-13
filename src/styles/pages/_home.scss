@@ -1,7 +1,10 @@
 .home {
   overflow: hidden;
   &__introduction {
-    height: $vh;
+    height: $vh-mobile;
+    @include desktop {
+      height: $vh-desktop;
+    }
     position: relative;
     &__video {
       height: 100%;

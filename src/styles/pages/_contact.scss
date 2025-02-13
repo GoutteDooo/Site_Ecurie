@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: $vh;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
   @include tablet {
     height: auto;
   }

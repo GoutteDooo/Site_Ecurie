@@ -3,7 +3,10 @@
   position: relative;
   padding-bottom: 2rem;
   margin: 0 auto;
-  height: $vh;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
   &--bg {
     position: absolute;
     background-image: url("/assets/images/cours.jpg");

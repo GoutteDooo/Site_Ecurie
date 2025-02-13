@@ -8,7 +8,10 @@
     width: 100%;
     padding: min(50px, 12vw) 40px 60px;
     box-sizing: border-box;
-    height: $vh;
+    height: $vh-mobile;
+    @include desktop {
+      height: $vh-desktop;
+    }
     h1 {
       font-weight: 700;
       font-size: 1.6rem;

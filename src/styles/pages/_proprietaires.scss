@@ -3,7 +3,10 @@
   &__prestations {
     @include verticalCenter;
     flex-direction: column;
-    height: $vh;
+    height: $vh-mobile;
+    @include desktop {
+      height: $vh-desktop;
+    }
     &--bubbles {
       width: 100%;
       @include verticalCenter;

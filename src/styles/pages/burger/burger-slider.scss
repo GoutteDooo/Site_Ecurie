@@ -2,7 +2,10 @@
   position: fixed;
   background: white;
   z-index: 1000;
-  height: $vh;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
   width: 100%;
   @include verticalCenter;
   flex-direction: column;

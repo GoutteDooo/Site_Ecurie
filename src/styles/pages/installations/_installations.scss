@@ -2,15 +2,21 @@
   background: $bg-color;
   .intro-annexe {
     &__bg-media {
-      height: calc(0.4 * $vh);
+      height: calc(0.4 * $vh-mobile);
       @include tablet {
-        height: calc(0.5 * $vh);
+        height: calc(0.5 * $vh-mobile);
+      }
+      @include desktop {
+        height: calc(0.5 * $vh-desktop);
       }
     }
     &__description {
-      height: calc(0.6 * $vh);
+      height: calc(0.6 * $vh-mobile);
       @include tablet {
-        height: calc(0.5 * $vh);
+        height: calc(0.5 * $vh-mobile);
+      }
+      @include desktop {
+        height: calc(0.5 * $vh-desktop);
       }
       p {
         line-height: max(1.5rem, 7vw);
