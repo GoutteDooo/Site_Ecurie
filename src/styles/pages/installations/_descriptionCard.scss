@@ -1,11 +1,10 @@
 .installations--description-card {
-  width: min(100%, 600px);
+  width: min(100%, 1000px);
   margin: auto;
   height: $vh;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  border: 5px solid $main-color;
   &__carousel {
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,6 +45,41 @@
         list-style-type: disc;
         font-size: 1rem;
       }
+    }
+  }
+}
+
+@include laptop {
+  .installations--description-card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    &__carousel {
+      height: 75%;
+      border: 5px solid $main-color;
+      border-radius: 25px;
+      overflow: hidden;
+      .carousel--viewport {
+      }
+    }
+    &__description {
+      height: 25%;
+      h1 {
+        width: 100%;
+        &:after {
+          width: 100%;
+        }
+      }
+      ul {
+        flex-direction: row;
+        li {
+          list-style-type: none;
+          font-style: italic;
+        }
+      }
+    }
+    .scroll-arrow {
+      background: none;
     }
   }
 }

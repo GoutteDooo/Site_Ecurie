@@ -1,9 +1,10 @@
 .installations--image-card {
+  width: min(100%, 1000px);
+  margin: auto;
   height: $vh;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  border: 5px solid $main-color;
   &__carousel {
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,5 +28,42 @@
       font-size: 1.2rem;
       color: $main-color;
     }
+  }
+}
+
+@include laptop {
+  .installations--image-card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    &__carousel {
+      height: 75%;
+      border: 5px solid $main-color;
+      border-radius: 25px;
+      overflow: hidden;
+      .carousel--viewport {
+      }
+    }
+    h1 {
+      width: 100%;
+      @include underline($secondary-color);
+      &:after {
+        bottom: 4rem;
+        width: 300px;
+      }
+      em {
+        margin-top: 1rem;
+      }
+    }
+    ul {
+      flex-direction: row;
+      li {
+        list-style-type: none;
+        font-style: italic;
+      }
+    }
+  }
+  .scroll-arrow {
+    background: none;
   }
 }
