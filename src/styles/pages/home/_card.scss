@@ -1,21 +1,24 @@
 .main {
   &__card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: $vh-mobile;
-    @include desktop {
-      height: $vh-desktop;
-    }
     width: 100%;
     .carousel--viewport {
       height: calc(0.67 * $vh-mobile);
-      @include desktop {
-        height: calc(0.67 * $vh-desktop);
+      @include laptop {
+        height: 100%;
+        width: 50%;
       }
     }
     &__content {
       height: calc((1 - 0.67) * $vh-mobile);
-      @include desktop {
-        height: calc((1 - 0.67) * $vh-desktop);
+      @include laptop {
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        gap: 1rem;
       }
       @include verticalCenter;
       justify-content: start;
@@ -44,6 +47,39 @@
         text-align: center;
         margin-bottom: 1rem;
         font-size: 0.9rem;
+      }
+    }
+  }
+}
+@include laptop {
+  .main__card {
+    flex-direction: row;
+    height: 350px;
+    background: $main-color;
+    &:nth-of-type(odd) {
+      flex-direction: row-reverse;
+      background: $bg-color;
+      .main__card__content {
+        h1 {
+          color: $main-color;
+          &:after {
+            background-color: $main-color;
+          }
+        }
+        p {
+          color: $text-color;
+        }
+      }
+    }
+    &__content {
+      h1 {
+        color: $bg-color;
+        &:after {
+          background-color: $bg-color;
+        }
+      }
+      p {
+        color: $bg-color;
       }
     }
   }

@@ -1,5 +1,5 @@
 .scroll-arrow {
-  @include desktop {
+  @include laptop {
     display: none;
   }
   position: absolute;
