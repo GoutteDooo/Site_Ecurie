@@ -56,7 +56,7 @@
     flex-direction: row;
     height: 350px;
     background: $main-color;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.21);
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
       background: $bg-color;

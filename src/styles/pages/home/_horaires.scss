@@ -8,6 +8,13 @@
   background-size: cover;
   background-position: 0 100%;
   z-index: 0;
+  @include laptop {
+    width: min(80%, 800px);
+    margin: 3rem auto;
+    border: 5px solid $main-color;
+    border-radius: 25px;
+    overflow: hidden;
+  }
   &__background {
     position: absolute;
     top: 0;
