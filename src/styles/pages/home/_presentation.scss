@@ -12,6 +12,11 @@
     @include desktop {
       height: $vh-desktop;
     }
+    @include laptop {
+      justify-content: space-evenly;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
     h1 {
       font-weight: 700;
       font-size: 1.6rem;
@@ -43,6 +48,10 @@
       @include tablet {
         font-size: max(0.92rem, 2.3vw);
         line-height: min(2.4rem, 6vw);
+      }
+      @include laptop {
+        font-size: 1.1rem;
+        line-height: 2.5rem;
       }
     }
   }
