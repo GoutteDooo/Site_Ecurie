@@ -21,7 +21,7 @@ const Introduction = () => {
         ></div>
         <div className="home__introduction__content--titles">
           <h1>
-            Bienvenue aux <br></br>Ecuries de la Selle
+            Bienvenue aux <br></br>Écuries de la Selle
           </h1>
           <h2>Ecuries familiales à Saulzoir</h2>
         </div>{" "}

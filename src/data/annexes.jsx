@@ -1,3 +1,5 @@
+import scrollEvent from "../utils/functions/scrollEvent";
+
 /**
  * Après coup, je me suis rendu compte que je me suis trop pris la tête à vouloir faire des objets json.
  * J'aurais pu simplement fonctionner comme ça, avec un array comprenant du JSX.
@@ -8,11 +10,14 @@ export const annexes = [
     id: 1,
     title: <h1>Écurie de Propriétaires</h1>,
     description: (
-      <p>
-        Les Écuries de la Selle proposent des pensions pour chevaux. Lorsque
-        votre cheval est en pension chez nous, vous bénéficiez d'avantages que
-        vous pouvez découvrir ci-dessous.
-      </p>
+      <>
+        <p>
+          Les Écuries de la Selle proposent des pensions pour chevaux. Lorsque
+          votre cheval est en pension chez nous, vous bénéficiez d'avantages que
+          vous pouvez découvrir ci-dessous.
+        </p>
+        <button onClick={() => scrollEvent(1)}>DÉCOUVRIR</button>
+      </>
     ),
     videoLink: "proprietaires",
     name: "proprietaires",

@@ -65,12 +65,8 @@
       }
     }
     &__description {
-      @include laptop {
-        padding: 4rem;
-      }
-      @include desktop {
-        padding: 6rem;
-      }
+      padding: 2rem;
+      justify-content: space-evenly;
       p {
         font-size: 1rem;
         line-height: 2rem;

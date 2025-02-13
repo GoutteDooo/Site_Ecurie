@@ -23,7 +23,7 @@ const NavbarDesktop = () => {
             location.pathname === "/proprietaires" ? "active" : ""
           }`}
         >
-          Ecurie de Propriétaires
+          Écurie de Propriétaires
         </div>
       </Link>
       <Link to="/installations">

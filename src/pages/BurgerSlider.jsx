@@ -30,7 +30,7 @@ const BurgerSlider = ({ active, setActive }) => {
               location.pathname === "/proprietaires" ? "active" : ""
             }`}
           >
-            Ecurie de Propriétaires
+            Écurie de Propriétaires
           </div>
         </Link>
         <Link to="/installations" onClick={() => setActive(false)}>
