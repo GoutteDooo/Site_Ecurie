@@ -10,7 +10,7 @@
   z-index: 0;
   @include laptop {
     width: min(80%, 800px);
-    margin: 3rem auto;
+    margin: 0 auto 3rem;
     border: 5px solid $main-color;
     border-radius: 25px;
     overflow: hidden;

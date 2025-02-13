@@ -2,11 +2,21 @@
   background: $main-color;
   height: 600px;
   padding-bottom: 2rem;
+  @include laptop {
+    background: none;
+    padding-bottom: 5rem;
+    height: 1000px;
+  }
   .stable-life--title {
     padding: 1rem;
     @include verticalCenter;
     background: $main-color;
     height: 15%;
+    @include laptop {
+      width: 250px;
+      margin: 0 auto 2rem;
+      border-radius: 25px;
+    }
     h1 {
       font-size: 1.5rem;
       font-weight: 700;
@@ -30,5 +40,9 @@
     margin: 0 0.5rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
     height: 85%;
+    @include laptop {
+      border: 5px solid $main-color;
+      border-radius: 25px;
+    }
   }
 }
