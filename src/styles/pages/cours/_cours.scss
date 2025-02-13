@@ -1,2 +1,12 @@
 .cours {
+  .intro-annexe {
+    &__bg-media {
+      &--image {
+        background-repeat: no-repeat;
+        @include laptop {
+          background-position: 0 -100px;
+        }
+      }
+    }
+  }
 }

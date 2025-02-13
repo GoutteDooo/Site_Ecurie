@@ -12,7 +12,7 @@ const IntroAnnexe = ({ annexe }) => {
   return (
     <div className="intro-annexe" id={annexe.name}>
       <div className="intro-annexe__bg-media">
-        <h1>{annexe.title}</h1>
+        {annexe.title}
         {annexe.videoLink && (
           <video
             className="intro-annexe__bg-media--video"
@@ -37,9 +37,7 @@ const IntroAnnexe = ({ annexe }) => {
           />
         )}
       </div>
-      <div className="intro-annexe__description">
-        <p>{annexe.description}</p>
-      </div>
+      <div className="intro-annexe__description">{annexe.description}</div>
       <ScrollArrow size={50} scrolling={1} />
     </div>
   );
