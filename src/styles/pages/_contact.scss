@@ -4,8 +4,10 @@
   justify-content: center;
   width: 100%;
   height: $vh;
-  @include desktop {
+  @include tablet {
     height: auto;
+  }
+  @include desktop {
     padding-bottom: 2rem;
   }
   h1 {

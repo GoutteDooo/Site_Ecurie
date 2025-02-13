@@ -3,5 +3,17 @@
   padding: auto;
   overflow: hidden;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.21);
-  margin-top: 1rem;
+  margin: 2rem 0;
+  height: 250px;
+  width: min(80%, 1000px);
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+  @include laptop {
+    height: 400px;
+  }
+  @include desktop {
+    height: 600px;
+  }
 }
