@@ -1,6 +1,33 @@
 .installations {
-  .intro-annexe__description {
-    p {
+  background: $main-color;
+  .intro-annexe {
+    &__bg-media {
+      height: calc(0.4 * $vh);
+      @include tablet {
+        height: calc(0.5 * $vh);
+      }
+    }
+    &__description {
+      height: calc(0.6 * $vh);
+      @include tablet {
+        height: calc(0.5 * $vh);
+      }
+      p {
+        line-height: max(1.5rem, 7vw);
+        font-size: 0.9rem;
+        @include tablet {
+          line-height: max(1.8rem, 5.5vw);
+        }
+        @include laptop {
+          line-height: max(2rem, 4vw);
+          font-size: 1rem;
+          width: 90%;
+        }
+        @include desktop {
+          line-height: 2.9rem;
+          width: 85%;
+        }
+      }
     }
   }
 }
