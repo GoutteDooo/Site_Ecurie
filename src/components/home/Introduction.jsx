@@ -11,7 +11,7 @@ const Introduction = () => {
         loop
         poster="/assets/images/accueil_mobile.jpg"
       >
-        <source src="/assets/videos/introduction-light.mp4" type="video/mp4" />
+        <source src="/assets/videos/introduction.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="home__introduction__content">
