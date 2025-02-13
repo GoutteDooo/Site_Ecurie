@@ -3,8 +3,12 @@
     &__bg-media {
       &--image {
         background-repeat: no-repeat;
+        background-position: 0 -50px;
         @include laptop {
-          background-position: 0 -100px;
+          background-position: 0 -210px;
+        }
+        @include desktop {
+          background-position: 0 -350px;
         }
       }
     }
