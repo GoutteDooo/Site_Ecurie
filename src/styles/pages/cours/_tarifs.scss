@@ -2,6 +2,8 @@
   width: 100%;
   position: relative;
   padding-bottom: 2rem;
+  margin: 0 auto;
+  height: $vh;
   &--bg {
     position: absolute;
     background-image: url("/assets/images/cours.jpg");
@@ -12,6 +14,9 @@
     width: 100%;
     z-index: -1;
     filter: brightness(0.75) saturate(1.5);
+    @include desktop {
+      background-attachment: fixed;
+    }
   }
   h1 {
     color: white;
@@ -30,5 +35,27 @@
         width: 0;
       }
     }
+    @include desktop {
+      &:after {
+        width: min(80%, 780px);
+      }
+    }
+  }
+  &--content {
+    @include verticalCenter;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 80%;
+    @include desktop {
+      align-items: start;
+      flex-direction: row;
+      width: min(80%, 800px);
+      flex-wrap: wrap;
+      align-content: start;
+    }
+  }
+  @include desktop {
+    height: 400px;
   }
 }
