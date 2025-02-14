@@ -48,55 +48,26 @@ const MentionsLegales = () => {
         </p>
       </section>
 
-      {/* <!-- Section RGPD --> */}
-      <section>
-        <h2>Données personnelles</h2>
-        <p>
-          [Si formulaire de contact : Rédiger une phrase d'explication sur
-          l'utilisation des données]
-          <br />
-          Conformément au RGPD, vous pouvez exercer vos droits d'accès, de
-          modification ou de suppression des données en nous contactant à [email
-          de contact].
-        </p>
-        {/* <!-- Ajouter lien si politique de confidentialité existe --> */}
-        <p>
-          Consultez notre{" "}
-          <a href="/politique-de-confidentialite">
-            Politique de confidentialité
-          </a>{" "}
-          pour plus d'informations.
-        </p>
-      </section>
-
       {/* <!-- Section Propriété intellectuelle --> */}
       <section>
         <h2>Propriété intellectuelle</h2>
         <p>
           Tous les contenus (textes, images, logo) sont la propriété exclusive
-          de [Nom de l'écurie] ou de ses partenaires.
-          <br />
-          Toute reproduction sans autorisation écrite est interdite.
+          des Écuries de la Selle ou de ses partenaires.
         </p>
+        <p>Toute reproduction sans autorisation écrite est interdite.</p>
       </section>
 
       {/* <!-- Section Cookies --> */}
       <section>
         <h2>Cookies</h2>
-        <p>
-          Ce site n'utilise [pas/de] cookies [adapter selon tracking]. [Si
-          cookies : expliquer leur finalité et lien vers politique]
-        </p>
+        <p>Ce site n'utilise pas de cookies.</p>
       </section>
 
       {/* <!-- Section Credits --> */}
       <section>
         <h2>Crédits</h2>
-        <p>
-          Site développé par : [Votre nom / Société de développement]
-          <br />
-          Photos : [Créditer les sources si nécessaire]
-        </p>
+        <p>Site développé par : GOUDAL Donovan</p>
       </section>
     </div>
   );
