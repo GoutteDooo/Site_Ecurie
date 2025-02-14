@@ -8,6 +8,7 @@ import Installations from "./pages/Installations";
 import Cours from "./pages/Cours";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
+import MentionsLegales from "./pages/MentionsLegales";
 //composants
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,6 +25,7 @@ function App() {
           <Route path="installations" element={<Installations />} />
           <Route path="cours" element={<Cours />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="mentions-legales" element={<MentionsLegales />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
