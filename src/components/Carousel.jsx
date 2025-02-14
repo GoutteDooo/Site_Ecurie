@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import ComponentLazyBackground from "../utils/ComponentLazyBackground";
 
 /**
  * Affiche le Carousel avec la carte passée en paramètre
@@ -83,27 +83,19 @@ const Carousel = ({
         }}
       >
         {[...Array(numberImages).keys()].map((_, index) => (
-          <div
-            className={`carousel--item ${isFilter(index) ? "filter" : ""}`}
-            style={{
-              backgroundImage: `url(${card.path}${card.id}_${
-                isFilter(index)
-                  ? "filter"
-                  : index == 0
-                  ? card.carousel - 1
-                  : index == numberImages - 1
-                  ? 0
-                  : index - 1
-              }.jpg)`,
-            }}
+          <ComponentLazyBackground
             key={index}
-          >
-            {isFilter(index) && (
-              <Link to="/installations">
-                <button>DÉCOUVRIR TOUTES NOS INSTALLATIONS</button>
-              </Link>
-            )}
-          </div>
+            imageUrl={`${card.path}${card.id}_${
+              isFilter(index)
+                ? "filter"
+                : index == 0
+                ? card.carousel - 1
+                : index == numberImages - 1
+                ? 0
+                : index - 1
+            }.jpg`}
+            isFilter={isFilter(index)}
+          />
         ))}
       </div>
       {compteur && (
