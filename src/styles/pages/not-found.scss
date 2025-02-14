@@ -1,0 +1,23 @@
+.not-found {
+  @include verticalCenter;
+  flex-direction: column;
+  height: $vh-mobile;
+  @include desktop {
+    height: $vh-desktop;
+  }
+  button {
+    margin-top: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: $main-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg-color;
+      color: $main-color;
+      border: 1px solid $main-color;
+    }
+  }
+}

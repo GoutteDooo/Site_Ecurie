@@ -18,11 +18,24 @@
     color: $text-color;
     a {
       color: $text-color;
+      height: 100%;
+      @include verticalCenter;
+      @include laptop {
+        &:hover {
+          color: $main-color;
+        }
+      }
     }
     &--mentions {
       font-weight: bold;
-      font-size: 0.65rem;
+      font-size: 0.7rem;
       cursor: pointer;
+      @include laptop {
+        font-size: 0.8rem;
+      }
+      @include desktop {
+        font-size: 0.9rem;
+      }
     }
   }
   &__contacts {

@@ -1,6 +1,7 @@
 import React from "react";
 
 const MentionsLegales = () => {
+  window.scrollTo(0, 0);
   return (
     <div className="mentions-legales">
       <h1>Mentions légales</h1>
