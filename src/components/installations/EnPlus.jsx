@@ -7,6 +7,8 @@ const EnPlus = () => {
       <ul>
         <li>2 Poulinières</li>
         <li>Portail sécurisé avec caméras de surveillance</li>
+        <li>Badge pour entrer dans l'enceinte</li>
+        <li>Salle de pansage</li>
         <li>Equipements de travail du cheval à disposition</li>
         <li>Grand Parking Extérieurs</li>
         <li>Chemins de balades à proximité</li>
