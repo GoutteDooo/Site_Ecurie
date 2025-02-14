@@ -11,8 +11,10 @@ const Footer = () => {
   const link = "https://www.facebook.com/profile.php?id=100067889324501";
   return (
     <div className="footer">
-      <div className="footer__copyright">
-        © Copyright Les Ecuries de la Selle
+      <div className="footer__legals">
+        <Link to="/mentions-legales">
+          <div className="footer__legals--mentions">Mentions légales </div>
+        </Link>
       </div>
       <div className="footer__contacts">
         <Link to="/contacts">

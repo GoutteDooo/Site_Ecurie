@@ -11,9 +11,19 @@
   padding: 0 20px;
   box-sizing: border-box;
   overflow: hidden;
-  &__copyright {
+  &__legals {
+    @include verticalCenter;
+    height: 100%;
     font-size: 0.6rem;
     color: $text-color;
+    a {
+      color: $text-color;
+    }
+    &--mentions {
+      font-weight: bold;
+      font-size: 0.65rem;
+      cursor: pointer;
+    }
   }
   &__contacts {
     &--link {
