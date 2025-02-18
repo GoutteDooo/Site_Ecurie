@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import scrollEvent from "../../utils/functions/scrollEvent";
 
 const Introduction = () => {
