@@ -11,9 +11,6 @@
   flex-direction: column;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
-  @media screen and (max-height: 700px) {
-    justify-content: start;
-  }
   &__logo {
     background-image: url("/assets/images/logo.jpg");
     background-size: cover;
@@ -21,6 +18,9 @@
     width: 170px;
     margin-bottom: 1rem;
     cursor: pointer;
+    @media screen and (max-height: 700px) {
+      display: none;
+    }
   }
   &__content {
     display: flex;
