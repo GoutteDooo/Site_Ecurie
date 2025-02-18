@@ -6,7 +6,10 @@
   background: $bg-color;
   p {
     font-size: 0.8rem;
-    span {
+    text-align: center;
+    b {
+      display: block;
+      margin-top: 0.5rem;
       font-size: 1.2rem;
       text-decoration: underline;
       color: $secondary-color;

@@ -12,14 +12,14 @@ import ScrollArrow from "../ScrollArrow";
  */
 const DescriptionCard = ({ description, id, card }) => {
   return (
-    <div className="installations--description-card">
+    <div className="installations--description-card" id={id}>
       <div className="installations--description-card__carousel">
         <Carousel card={card} />
       </div>
       <div className="installations--description-card__description">
         {description}
       </div>
-      <ScrollArrow size={50} scrolling={id + 2} />
+      <ScrollArrow size={50} scrolling={String(id + 1)} />
     </div>
   );
 };

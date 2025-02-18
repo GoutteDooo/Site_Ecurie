@@ -4,7 +4,7 @@
  */
 export default function scrollEvent(scrolling = null) {
   if (typeof scrolling === "number") {
-    const offset = window.innerWidth < 1280 ? 0 : 100;
+    const offset = window.innerWidth < 1280 ? -70 : 100;
     const target = (window.innerHeight - offset) * scrolling;
     window.scrollTo({
       top: target,

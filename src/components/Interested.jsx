@@ -7,7 +7,7 @@ const Interested = () => {
       <p>
         Intéressé ? N'hésitez pas à{" "}
         <Link to={"/contacts"}>
-          <span>nous contacter</span>
+          <b>nous contacter</b>
         </Link>
       </p>
     </div>

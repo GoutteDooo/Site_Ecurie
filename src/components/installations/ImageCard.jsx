@@ -10,13 +10,17 @@ import Carousel from "../Carousel";
  * @returns
  */
 const ImageCard = ({ description = "installation", id = 0, card }) => {
+  /* ! ATTENTION ! */
+  /* INSTABILITE : LE COMPOSANT EnPlus.jsx COMPORTE L'ID 8 POUR EVITER LE PROBLEME AVEC
+  LA SCROLL ARROW, A VOIR SI MAJ A EFFECTUER */
+  /* ! ATTENTION ! */
   return (
-    <div className="installations--image-card">
+    <div className="installations--image-card" id={id}>
       <div className="installations--image-card__carousel">
         <Carousel card={card} />
       </div>
       {description}
-      <ScrollArrow size={50} scrolling={id + 2} />
+      <ScrollArrow size={50} scrolling={String(id + 1)} />
     </div>
   );
 };
