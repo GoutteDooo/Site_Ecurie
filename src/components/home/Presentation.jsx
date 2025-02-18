@@ -54,7 +54,7 @@ const Presentation = () => {
         Rejoignez-nous et partagez votre passion dans une ambiance à la fois
         sereine et dynamique !
       </p>
-      <ScrollArrow size={70} />
+      <ScrollArrow size={70} scrolling={"homeCard1"} />
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Introduction = () => {
       <div className="home__introduction__content">
         <div
           className="home__introduction__content--logo"
-          onClick={() => scrollEvent(1)}
+          onClick={() => scrollEvent("homePres")}
         ></div>
         <div className="home__introduction__content--titles">
           <h1>
@@ -41,9 +41,7 @@ const Introduction = () => {
           <h2>Ecuries familiales à Saulzoir</h2>
         </div>{" "}
         <div className="home__introduction__content--button">
-          <button onClick={() => scrollEvent(null, "homePres")}>
-            DECOUVRIR
-          </button>
+          <button onClick={() => scrollEvent("homePres")}>DECOUVRIR</button>
         </div>
       </div>
     </div>

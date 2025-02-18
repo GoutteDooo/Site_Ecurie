@@ -1,16 +1,16 @@
 /**
  * Déclenche un scroll avec une valeur définie
- * @param {number} scrollingPx 1 = 100vh
- * @param {number} offset 100 = 100vh
+ * @param {number} scrolling 1 = 100vh, string = anchor
  */
-export default function scrollEvent(scrollingPx = null, anchor = null) {
-  if (scrollingPx) {
+export default function scrollEvent(scrolling = null) {
+  if (typeof scrolling === "number") {
     const offset = window.innerWidth < 1280 ? 0 : 100;
-    const target = (window.innerHeight - offset) * scrollingPx;
+    const target = (window.innerHeight - offset) * scrolling;
     window.scrollTo({
       top: target,
     });
-  } else if (anchor) {
+  } else if (typeof scrolling === "string") {
+    const anchor = scrolling;
     const target = document.getElementById(anchor).offsetTop;
     window.scrollTo({
       top: target,

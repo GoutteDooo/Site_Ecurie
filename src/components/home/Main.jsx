@@ -13,9 +13,9 @@ const Main = () => {
   return (
     <div className="main">
       <Presentation />
-      <Card card={cards[0]} />
-      <Card card={cards[1]} />
-      <Card card={cards[2]} />
+      <Card card={cards[0]} id="homeCard1" />
+      <Card card={cards[1]} id="homeCard2" />
+      <Card card={cards[2]} id="homeCard3" />
       <AllInstallations />
       <Horaires />
       <StableLife card={cards[3]} />

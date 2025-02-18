@@ -8,7 +8,11 @@ import scrollEvent from "../utils/functions/scrollEvent";
  * @param {number} scrolling définit une target : scrolling * 100vh
  * @returns
  */
-const ScrollArrow = ({ size = 100, scrolling = 2 }) => {
+const ScrollArrow = ({ size = 100, scrolling = 1 }) => {
+  //Cas particulier pour les installations dans Home
+  if (scrolling === "homeCard4") {
+    scrolling = "allInstallations";
+  }
   return (
     <div
       className="scroll-arrow"
