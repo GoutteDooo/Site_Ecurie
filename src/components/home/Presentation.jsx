@@ -28,7 +28,11 @@ const Presentation = () => {
   };
 
   return (
-    <div className="main__presentation" style={{ fontSize: setFontSize() }}>
+    <div
+      className="main__presentation"
+      id="homePres"
+      style={{ fontSize: setFontSize() }}
+    >
       <h1>Les Ecuries de la Selle</h1>
       <p>
         Depuis 2021, Les Écuries de la Selle accueillent les cavaliers

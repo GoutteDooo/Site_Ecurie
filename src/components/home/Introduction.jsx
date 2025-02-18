@@ -41,7 +41,9 @@ const Introduction = () => {
           <h2>Ecuries familiales à Saulzoir</h2>
         </div>{" "}
         <div className="home__introduction__content--button">
-          <button onClick={() => scrollEvent(1)}>DECOUVRIR</button>
+          <button onClick={() => scrollEvent(null, "homePres")}>
+            DECOUVRIR
+          </button>
         </div>
       </div>
     </div>
