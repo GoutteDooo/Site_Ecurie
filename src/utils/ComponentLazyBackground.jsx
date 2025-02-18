@@ -6,8 +6,6 @@ const ComponentLazyBackground = ({ imageUrl, isFilter }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    console.log("ca marche");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
