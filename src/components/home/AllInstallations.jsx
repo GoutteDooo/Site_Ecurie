@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const AllInstallations = () => {
   const navigate = useNavigate();
   return (
-    <div className="all-installations">
+    <div className="all-installations" id="allInstallations">
       <button onClick={() => navigate("/installations")}>
         {" "}
         <span>DÉCOUVRIR TOUTES NOS INSTALLATIONS</span>

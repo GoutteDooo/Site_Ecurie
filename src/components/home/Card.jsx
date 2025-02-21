@@ -11,9 +11,11 @@ import ScrollArrow from "../ScrollArrow";
  * card.description : Array de Strings
  * @returns
  */
-const Card = ({ card }) => {
+const Card = ({ card, id = "" }) => {
+  console.log(id);
+
   return (
-    <div className="main__card">
+    <div className="main__card" id={id}>
       <Carousel card={card} compteur={true} />
       <div className="main__card__content">
         <h1>{card.title}</h1>
@@ -21,7 +23,7 @@ const Card = ({ card }) => {
           <p key={index}>{item}</p>
         ))}
       </div>
-      <ScrollArrow size={50} scrolling={Number(card.id) + 2} />
+      <ScrollArrow size={50} scrolling={String("homeCard" + (card.id + 1))} />
     </div>
   );
 };

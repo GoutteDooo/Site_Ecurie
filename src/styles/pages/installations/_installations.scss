@@ -21,8 +21,12 @@
       p {
         line-height: max(1.5rem, 7vw);
         font-size: 0.9rem;
+        padding-bottom: 1rem;
         @include tablet {
           line-height: max(1.8rem, 5.5vw);
+        }
+        @media screen and (max-height: 750px) {
+          font-size: 0.75rem;
         }
         @include laptop {
           line-height: max(2rem, 4vw);

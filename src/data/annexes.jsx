@@ -16,7 +16,6 @@ export const annexes = [
           votre cheval est en pension chez nous, vous bénéficiez d'avantages que
           vous pouvez découvrir ci-dessous.
         </p>
-        <button onClick={() => scrollEvent(1)}>DÉCOUVRIR</button>
       </>
     ),
     videoLink: "proprietaires",

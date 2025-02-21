@@ -2,7 +2,7 @@ import React from "react";
 
 const EnPlus = () => {
   return (
-    <div className="installations__en-plus">
+    <div className="installations__en-plus" id="8">
       <h1>Et plus encore...</h1>
       <ul>
         <li>2 Poulinières</li>

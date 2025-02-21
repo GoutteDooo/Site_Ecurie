@@ -4,7 +4,10 @@
       &--image {
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position: 0 -50px;
+        background-position: center;
+        @include tablet {
+          background-position: 0 -50px;
+        }
         @include laptop {
           background-position: 0 -210px;
         }

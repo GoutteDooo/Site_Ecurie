@@ -24,7 +24,7 @@ export const descriptions = {
   paddocks: (
     <>
       <h1>
-        12 paddocks <br /> de + de 1000 m²
+        12 paddocks de + de 1000 m²
         <em>Avec point d'eau</em>
       </h1>
     </>

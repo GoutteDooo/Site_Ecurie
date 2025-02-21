@@ -5,6 +5,7 @@
   z-index: 1000;
   position: fixed;
   top: 0;
+  transition: all 0.3s ease-in-out;
   background-color: white;
   height: 70px;
   width: 100%;
@@ -147,6 +148,7 @@
     $navbar-height: 100px;
     z-index: 1000;
     position: fixed;
+    transition: 0.3s all ease;
     top: 0;
     background-color: white;
     height: $navbar-height;

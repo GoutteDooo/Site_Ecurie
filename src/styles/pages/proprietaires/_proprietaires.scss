@@ -3,7 +3,7 @@
   &__prestations {
     @include verticalCenter;
     flex-direction: column;
-    height: $vh-mobile;
+    height: 700px;
     @include desktop {
       height: $vh-desktop;
     }

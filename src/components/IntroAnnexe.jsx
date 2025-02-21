@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollArrow from "./ScrollArrow";
 
 /**
@@ -9,6 +9,18 @@ import ScrollArrow from "./ScrollArrow";
  * @returns
  */
 const IntroAnnexe = ({ annexe }) => {
+  useEffect(() => {
+    // Ajouter dans useEffect ou componentDidMount
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      const videos = document.querySelectorAll("video");
+      videos.forEach((video) => {
+        video.play().catch(() => {
+          // Fallback pour les strictes politiques autoplay
+          video.setAttribute("poster", "poster.jpg");
+        });
+      });
+    }
+  }, []);
   return (
     <div className="intro-annexe" id={annexe.name}>
       <div className="intro-annexe__bg-media">
@@ -19,6 +31,9 @@ const IntroAnnexe = ({ annexe }) => {
             autoPlay
             muted
             loop
+            playsInline
+            disablePictureInPicture
+            controls={false}
             poster="/assets/images/accueil_mobile.jpg"
           >
             <source
