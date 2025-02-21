@@ -16,7 +16,7 @@ const DecorImage = ({
   const style = {
     backgroundImage: `url(/assets/images/decor_image/${imgLink})`,
     height: size,
-    backgroundAttachment: isParallax ? "fixed" : "local",
+    // backgroundAttachment: isParallax ? "fixed" : "local",
     backgroundPosition: imgPos,
   };
   return <div className="decor-image" style={style}></div>;
