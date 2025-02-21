@@ -57,11 +57,10 @@ const Bubble = ({
     if (linking === "scroll") {
       const detailsElement = document.getElementById("details");
       if (detailsElement) {
-        const offset = 70; // Hauteur de la navbar
         const elementPosition =
           detailsElement.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({
-          top: elementPosition - offset,
+          top: elementPosition,
           behavior: "smooth",
         });
       }
