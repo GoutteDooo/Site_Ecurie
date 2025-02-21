@@ -12,8 +12,9 @@ const Prestations = () => {
       <b>Cours d'équitation & éthologie</b>
       <em>(cliquer pour aller sur la page)</em>
     </>,
-    <p>Sorties de votre animal</p>,
-    <p>Tonte</p>,
+    <p>Sorties/Libertés manège et/ou paddock</p>,
+    <p>Monte et Longe par la monitrice</p>,
+    <p>Tonte de votre animal</p>,
     <p>Solarium avec monnayeur</p>,
   ];
   const linkings = ["scroll", "/cours"];

@@ -3,7 +3,7 @@
   &__prestations {
     @include verticalCenter;
     flex-direction: column;
-    height: 700px;
+    padding-bottom: 2rem;
     @include desktop {
       height: $vh-desktop;
     }
@@ -14,7 +14,7 @@
     }
     h1 {
       display: inline-block;
-      margin: 1rem auto 3rem;
+      margin: 2rem auto 3rem;
       font-size: 1.7rem;
       font-weight: 700;
       color: $main-color;

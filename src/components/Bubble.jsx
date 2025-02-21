@@ -1,6 +1,6 @@
 import React from "react";
 import { MAIN_COLOR } from "../utils/variables";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Affiche une bulle centrée verticalement
@@ -44,7 +44,7 @@ const Bubble = ({
         return {
           ...defaultStyle,
           cursor: "pointer",
-          border: `4px solid ${textColor}`,
+          border: `5px solid ${textColor}`,
         };
       }
     }

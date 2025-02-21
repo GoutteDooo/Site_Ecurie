@@ -2,7 +2,7 @@
   "cards": [
     {
       "id": 1,
-      "carousel": 5,
+      "carousel": 3,
       "path": "/assets/images/cards/",
       "title": "12 Boxes Extérieurs",
       "description": [
@@ -37,7 +37,7 @@
     {
       "id": 4,
       "path": "/assets/images/stable_life/",
-      "carousel": 87
+      "carousel": 83
     },
     {
       "id": 5,
@@ -57,12 +57,12 @@
     {
       "id": 8,
       "path": "/assets/images/installations/",
-      "carousel": 5
+      "carousel": 4
     },
     {
       "id": 9,
       "path": "/assets/images/installations/",
-      "carousel": 5
+      "carousel": 3
     },
     {
       "id": 10,

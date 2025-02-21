@@ -5,7 +5,7 @@ const EnPlus = () => {
     <div className="installations__en-plus" id="8">
       <h1>Et plus encore...</h1>
       <ul>
-        <li>2 Poulinières</li>
+        <li>2 Boxes Poulinières</li>
         <li>Portail sécurisé avec caméras de surveillance</li>
         <li>Badge pour entrer dans l'enceinte</li>
         <li>Salle de pansage</li>

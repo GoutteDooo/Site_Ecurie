@@ -17,7 +17,6 @@ export const CONTENT_PRESTATIONS = [
 
 export const CONTENT_INFOS = [
   <p>Monitrice Diplômée BPJEPS & BFEEE1</p>,
-  <p>Cours Classiques et Éthologiques</p>,
   <p>Accompagnement dans les concours</p>,
   <p>Passage de galops FFE</p>,
   <p>Coachings concours club amateur, dressage & sauts</p>,
