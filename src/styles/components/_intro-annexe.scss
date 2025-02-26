@@ -40,8 +40,12 @@
       width: 100%;
       background-size: cover;
       background-position: 50% 50%;
+      background-attachment: scroll;
       filter: brightness(0.65) saturate(1.3) contrast(1.2);
       z-index: -1;
+      @include laptop {
+        background-attachment: fixed;
+      }
     }
   }
   &__description {
